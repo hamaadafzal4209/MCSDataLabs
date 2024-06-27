@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo {
   width: 110.09px;
   height: 60px;
