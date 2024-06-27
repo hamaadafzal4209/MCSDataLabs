@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+  width: 110.09px;
+  height: 60px;
+}
+
+.service-card-container,
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.newsCard:hover {
+  border-bottom: 12px solid #217dc1;
+  box-shadow: 24px 24px 64px 0px #00000014;
+  border-radius: 20px;
+  border: 0px 0px 12px 0px;
+}
+
+.vision::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/Vector.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.vision::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/vector-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.learnMoreBtn {
+  width: 312px;
+  height: 56px;
+  border: 3px solid;
+}
+
+.learnMoreBtn {
+  width: 312px;
+  height: 56px;
+  border: 3px solid transparent;
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 1.5rem;
+  padding-right: 0.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+.learnMoreBtn::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(90deg, #FF512F, #F09819);
+  z-index: -1;
+}
+
+.learnMoreBtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border-radius: 28px;
+  z-index: -1;
+}
+
+.learnMoreBtn div {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnMoreBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.rolesContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
