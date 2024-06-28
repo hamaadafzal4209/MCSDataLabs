@@ -1,3 +1,15 @@
+const navBar = document.querySelector(".navBar");
+const menuIcon = document.querySelector(".menu-icon");
+const themeIcon = document.getElementById("themeIcon");
+
+menuIcon.addEventListener("click", () => {
+    if (navBar.style.left === "-100%") {
+        navBar.style.left = "0px";
+    } else {
+        navBar.style.left = "-100%";
+    }
+});
+
 function toggleDarkMode() {
     const body = document.body;
     const isDarkMode = body.classList.toggle("dark");

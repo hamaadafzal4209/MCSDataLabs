@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- boxicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-DwoSm4qO.css">
+  </head>
+
+  <body class="bg-[#fafafc] dark:bg-[#02051E]">
+    <!-- navbar -->
+    <nav
+      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    >
+      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+        <img src="/assets/logo-YHgwUYZP.png" class="w-full h-full" alt="" />
+      </div>
+      <div
+        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
+      >
+        <ul class="xl:flex mr-auto items-center gap-4">
+          <li>
+            <a class="leading-[32px] text-[#94c246]" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/smarko.html"
+              >SmarKo Health®</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#project">Project</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- right nav section -->
+        <div class="xl:flex items-center gap-4">
+          <!-- search input -->
+          <form
+            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+          >
+            <i class="ri-search-line text-[#A9A9A9]"></i>
+            <input
+              type="search"
+              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+              placeholder="Search"
+            />
+          </form>
+          <!-- social icons -->
+          <div class="flex items-center gap-3">
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+            >
+              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu icon -->
+      <div class="menu-icon cursor-pointer block xl:hidden">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dSxCcAgEAXQrzhARjBTiV1WyAQhm9iJVVbJBkkW0dgIan9F4j0Q+VgcwucAxtjXiTqEEK58adC4jTFzCap+iTHulIPBhtK3+hBCTCCQUjpzq9eSVff45EMyOH9Igw2labX3fgHhyrTWuhKaVkspN9DuagfG2G+84dkfvhsWy+YAAAAASUVORK5CYII=" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero-section -->
+    <div
+      class="container px-6 md:px-12 xl:px-20 mt-[10px] sm:my-[20px] md:my-[40px]"
+    >
+      <div
+        class="relative flex items-center justify-center rounded-[36px] h-[780px] xs:h-[600px]"
+      >
+        <img
+          src="/assets/home-hero-Q77eoJFL.png"
+          class="hero-image opacity-[50%] absolute w-full h-full object-cover rounded-[36px] z-10"
+          alt="Background Image"
+        />
+        <img
+          src="/assets/hero-people-group-Pu_WFqGv.jpeg"
+          class="hero-image absolute w-full h-full object-cover rounded-[36px]"
+          alt="Foreground Image"
+        />
+        <div class="z-20 text-white text-center">
+          <h1 class="font-bold text-[40px] leading-[60px] p-4">
+            Technology that matters !!
+          </h1>
+          <p class="font-[400] text-[24px] leading-[36px] p-4">
+            MCS Creates Solutions Tailored To Your Specific Needs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="container text-center mx-auto px-6 md:px-12 xl:px-20 my-12">
+      <h1
+        class="font-bold text-[32px] leading-[48px] mt-[50px] dark:text-white"
+      >
+        Things we do !!
+      </h1>
+      <div
+        class="service-card-container w-full bg-white dark:bg-[#1B1E34] border border-[#E1E1E1] dark:border-[#7A7D96] rounded-[20px] p-6 mt-8"
+      >
+        <!-- card 1 -->
+        <div
+          class="bg-[#f7f7f7] dark:bg-[#323448] p-8 rounded-[18px] text-left"
+        >
+          <img src="data:image/png;base64,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" class="w-[50px] h-[50px]" alt="" />
+          <h1
+            class="text-[#1f1f1f] dark:text-white text-[20px] leading-[30px] font-bold my-3"
+          >
+            Research and development
+          </h1>
+          <p class="text-[16px] dark:text-white leading-[24px] font-[400]">
+            MCS has access to several research organisations, universities, and
+            young talent, allowing the firm to contribute to international
+            innovation projects.
+          </p>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="bg-[#f7f7f7] dark:bg-[#323448] p-8 rounded-[18px] text-left"
+        >
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQlSURBVHgB7Vo9bBtlGH7es0ObCRsB861IDK6QkNjsjTERbRoJiVxadtcLYks8McaRYEP1FTFUbUrNxpZjAqaaiZFDTFVbxW3VNolz9/W5z2fXP3dnp77GVuVHsu7v/e7e//f9vs+COcfFuioKYAbnbcBpbIrb/1wwp1ipq9w7GdSVwkr/fRHUbn0lle61gTnFUgY7w8wH4L1raz+pne71XFrgUl0VqNp7STReFuYvX8p/c2kBBRTHEh2jFBzmUgC6RWtSmnm1gDuOxgOawTE7MvielcMhg8eghD6a8pnt4gyxXlemZ6CeROMDu910OhDE6q8rOwzza4PkYuOcX5EL9lizTgud8w3c1bz4qNISpmGg3E8TMH9nQ3o89ixA5rdGmddPLBwZOZ6s4g3i8g1VJnM1BO7jY3VvU7SL0CI1FrACfT3HY4OaH1CktoD6wzJZIf5N/IJSJbqTgzeAIK8H+Z2nzTaZH662SehYQKEwtiIIaVjKkSKCasuCdZfMFwPX8HxsD2t4HLIhczmcMcJg3afyTPp75c6m1PAa6LjQPjPPshwkET777dBt/3/iwGtX83bDxRQYCtbA353+59oyDGAGcaxiu2N6jqP+tKgBKUcRqxeq8fjn5/rd4R3HU7jx/vXbdhT9gbVuIuuXGTdFdAqO2xW8P1jp76Vhf+9ZJuxAExCMvzCYRqOFcHBOrQZpNGTMYpbYoOimZozCtD3sfmjfbnaYv1RARgIGhrXn/vDxN87f731i0eedE6WDdcTf2QdZGFMHevzS9UZCV2ekbhcoupA5UYMPvr5Y9JVhMb1thCObtMpuRmQLMdp7dP4DfPvp99W9DdlGDOhe23SvLUwmQHXqblRbxfCKlHYrtEoyxC/lf9xz4h6fVoAspkTevunyYAe/R1fWtg1J/rjni4kUkWozp8RrjqOhi6XakqQqQMbzHCS1wirIRscOUkSqAjBNtpg6K7EEgoqmSRE6Bph5ihCD2USZ0WQ0u/J/ZUayx7wPedYGBrZDczAVSpFab0FUk79qUvC+LrJhI7evpxGxUMFywApp3UkaujCwSzgDGIiY+cdCTkF7RjBO2ci9iznD3K4LTYqFALPG1K1EPw6uXi5Hz6tDiGI6lkb++q0qUkJqAjy8+gUzlKolT01FT03Zyf6eVk1IzYVEZQqT0vq+UURKWATxrLEQYNZYCDBrLASYNRYCzBoLAWaNt2I+4I7cfcLfU+gdtQEoPI55D+4/O25Nqg2VsADy9CFacR25kQGWc51jCH7zEA0MCxFsBfgj41vcnI3dRTk60uujLsZAb1AbmjYSy9kIfkL43BxuH/Yu3RNu+r3a5Ovsk3VWKB7w+GJotUJIvGYnrn3+s75iUnAr7rkSapfv+ehm8g7P599xgc2Ifs/5PNylJf3XG71j+RI7Hafv5g3HHgAAAABJRU5ErkJggg==" class="w-[50px] h-[50px]" alt="" />
+          <h1
+            class="text-[#1f1f1f] dark:text-white text-[20px] leading-[30px] font-bold my-3"
+          >
+            Analytical capabilities
+          </h1>
+          <p class="text-[16px] dark:text-white leading-[24px] font-[400]">
+            MCS puts high emphasis on analytical methodologies, with the aim to
+            arrive at solutions that convince through simplicity.
+          </p>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="bg-[#f7f7f7] dark:bg-[#323448] p-8 rounded-[18px] text-left"
+        >
+          <img src="data:image/png;base64,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" class="w-[50px] h-[50px]" alt="" />
+          <h1
+            class="text-[#1f1f1f] dark:text-white text-[20px] leading-[30px] font-bold my-3"
+          >
+            Result-driven inspiration
+          </h1>
+          <p class="text-[16px] dark:text-white leading-[24px] font-[400]">
+            MCS stays away from rigid structures and thinking processes.
+            Instead, MCS nurtures a culture in which ideas and innovation can
+            flourish.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- latest news -->
+    <div class="container px-6 md:px-12 xl:px-20 my-12">
+      <h1
+        class="font-bold text-[32px] leading-[48px] text-center dark:text-white"
+      >
+        Explore the latest news <br />about MCS Datalabs !!🔥
+      </h1>
+      <div class="news-container mt-6">
+        <!-- card 1 -->
+        <div
+          class="newsCard relative bg-white dark:bg-[#FFFFFF1A] dark:text-white border border-[#E1E1E1] dark:border-[#7A7D96] rounded-[20px] p-6 mt-12"
+        >
+          <div class="-translate-y-16">
+            <img src="/assets/news-1-B_yiSTWs.png" class="" alt="News Image" />
+          </div>
+          <div class="-mt-12">
+            <h3 class="font-bold text-[20px] leading-[30px]">
+              YOUTUBE: REFLOW Berlin Pilot
+            </h3>
+            <p
+              class="font-normal text-xl leading-[30px] text-[#1f1f1f] dark:text-white"
+            >
+              26 July 2022
+            </p>
+            <p class="font-normal text-base leading-6 [#525252]">
+              Waste water heat is an underutilized energy resource that can...
+            </p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="newsCard relative bg-white dark:bg-[#FFFFFF1A] dark:text-white border border-[#E1E1E1] dark:border-[#7A7D96] rounded-[20px] p-6 mt-12"
+        >
+          <div class="-translate-y-16">
+            <img src="/assets/news-2-Bkq3InEi.png" class="" alt="News Image" />
+          </div>
+          <div class="-mt-12">
+            <h3 class="font-bold text-[20px] leading-[30px]">
+              YOUTUBE: REFLOW Berlin Pilot
+            </h3>
+            <p
+              class="font-normal text-xl leading-[30px] text-[#1f1f1f] dark:text-white"
+            >
+              26 July 2022
+            </p>
+            <p class="font-normal text-base leading-6 [#525252]">
+              Waste water heat is an underutilized energy resource that can...
+            </p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="newsCard relative bg-white dark:bg-[#FFFFFF1A] dark:text-white border border-[#E1E1E1] dark:border-[#7A7D96] rounded-[20px] p-6 mt-12"
+        >
+          <div class="-translate-y-16">
+            <img src="/assets/news-3-DIMUSegy.png" class="" alt="News Image" />
+          </div>
+          <div class="-mt-12">
+            <h3 class="font-bold text-[20px] leading-[30px]">
+              YOUTUBE: REFLOW Berlin Pilot
+            </h3>
+            <p
+              class="font-normal text-xl leading-[30px] text-[#1f1f1f] dark:text-white"
+            >
+              26 July 2022
+            </p>
+            <p class="font-normal text-base leading-6 [#525252]">
+              Waste water heat is an underutilized energy resource that can...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- team -->
+    <div class="container px-6 md:px-12 xl:px-20 my-12">
+      <div class="flex items-center justify-between mb-8">
+        <div></div>
+        <div class="flex items-center gap-2">
+          <div class="relative cursor-pointer">
+            <img
+              class="h-[52px] w-[52px]"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <i
+              class="ri-arrow-left-line text-[#111111] absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] text-2xl"
+            ></i>
+          </div>
+          <div class="relative cursor-pointer">
+            <img
+              class="h-[52px] w-[52px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHsSURBVHgB7ZpdTsJAEIBnt/JIwhGqHkC4Ab2BNzDegEdjRDEa45vhBngDb9DiBSgncL1B30133GloKISfggZ3Jn4PLWx3Q77MdNl2Vh33xwiHxQAo4340Bcg/IYfEPEUp/BLqD4RWYRSoxOb58KdyvgjNQUhR2aF5iEawB/4JzTH4ZSPzHJldBmnwl1A19MdJ//0l7MWtuoN8FipAwJ5q6kl4FYd1+nsvNIOiNQmv4/a2jlyEiJYK9OT0dnyxqRMnoQKLMNoUKXZChItUvO6eYikElH4NJ7Vi9uMqRIS6GdwtN3IWKqb08CbuVttYCxFKLUaJvZCLU7caJQFCi1ESIVSNkhChgnM6iBFSShdLIp+fh3YGc9uRlHIuPNAVJaS1OhMlhKja0lKuJUuIFqwgjH8h35EmZGRN24CyhNwf0VSYkLCUc0KJJCFDtSU5z0OACZ3FCNkch3SWIeSqfmUpU4QQlTDLzxKETLUey14IAxtVv/N+t42uWj5YLCpzFjJwBIPlRq5CGaWai062fIGl0EzGrLrGTgjBXjqZtdtnjoAPZZpt3AvEJULGyXS2yRD+7yRxU/NMxtTp723KIdLqGe/NY5TsMs47oX1FSnwRylxqvbrz274iJQcXojcz7pBpBakFnEIASZ2bvS7fhSW/hDuTXugAAAAASUVORK5CYII="
+              alt=""
+            />
+            <i
+              class="ri-arrow-right-line text-white absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] text-2xl"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center xs:justify-center flex-col">
+        <h1
+          class="flex items-center gap-2 font-bold text-[32px] leading-[48px] dark:text-white"
+        >
+          Get to know our
+          <img class="w-[60px] h-[60px]" src="data:image/png;base64,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" alt="" />
+        </h1>
+        <h1 class="font-bold text-[32px] leading-[48px] dark:text-white">
+          Multidisciplinary Team
+        </h1>
+      </div>
+      <div class="my-6">
+        <img id="team-map" src="/assets/team-map-i6PMZ9Hw.png" alt="" />
+      </div>
+    </div>
+
+    <!-- vision -->
+    <div class="container px-6 md:px-12 xl:px-20">
+      <div
+        class="relative h-[440px] bg-[#217dc1] text-white rounded-[50px] px-6 my-12"
+      >
+        <div class="vision">
+          <div class="max-w-[450px] w-full mx-auto pt-12 sm:pt-16">
+            <div class="flex items-center flex-col sm:flex-row">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFbSURBVHgB7dzhTYRAEAXgBxVcB2IFtkAnUgId3FmCFagVWAKxEujgroNxJ2A0GH0k7CXH8L5kLveD9wcyWZZdAP5gZodUbar3VL198/9dqiZVBZE9mRrjmOpsyxwhsgc+IsxGi6V6jSYS2ormUJNIfLauOX42yQEiQZT+Y+M8osJ6VaoWIkEU021Rj3wuqe6LorhAZON8BKmRl99iNRAJwBvkEfnVEAnAG6RCfg8QCcDnIIYrSHOQAiIbV+JK5s9/Fxzfk0fINcm/knxD8ieSfyH5huQ7kq9Ifsk5ZO5IviP5huTZNTiRPDuH7BrUJE8fRs0D3iAD8hsgEoGNmxFz6yASgI8gH8jvDSIB+CTd1y383iznFhFfKBwgsnHltOL9jHye1BwSio3vgPS2Xs4tKyK3w7TdXeR/phemRDjji2ZfztOxegdE9mUaTXxls7PfH23wtZNWjSHRfQIyZTd1ig8LlAAAAABJRU5ErkJggg==" alt="" />
+              <p
+                class="font-bold text-[32px] leading-[48px] flex items-center gap-2 ml-2"
+              >
+                Our Vision <img src="data:image/png;base64,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" alt="" />
+              </p>
+            </div>
+            <p
+              class="font-normal text-base leading-6 text-[#E4E6EB] text-center"
+            >
+              We envision a world in which technology smoothly integrates into
+              our lives, providing for health of people and environment.
+            </p>
+          </div>
+          <div class="max-w-[450px] w-full mx-auto pt-6 sm:pt-16">
+            <div
+              class="flex items-center justify-end flex-col-reverse sm:flex-row"
+            >
+              <p
+                class="font-bold text-[32px] leading-[48px] flex items-center gap-2 mr-2"
+              >
+                <img src="data:image/png;base64,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" alt="" /> & Mission
+              </p>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFbSURBVHgB7dzhTYRAEAXgBxVcB2IFtkAnUgId3FmCFagVWAKxEujgroNxJ2A0GH0k7CXH8L5kLveD9wcyWZZdAP5gZodUbar3VL198/9dqiZVBZE9mRrjmOpsyxwhsgc+IsxGi6V6jSYS2ormUJNIfLauOX42yQEiQZT+Y+M8osJ6VaoWIkEU021Rj3wuqe6LorhAZON8BKmRl99iNRAJwBvkEfnVEAnAG6RCfg8QCcDnIIYrSHOQAiIbV+JK5s9/Fxzfk0fINcm/knxD8ieSfyH5huQ7kq9Ifsk5ZO5IviP5huTZNTiRPDuH7BrUJE8fRs0D3iAD8hsgEoGNmxFz6yASgI8gH8jvDSIB+CTd1y383iznFhFfKBwgsnHltOL9jHye1BwSio3vgPS2Xs4tKyK3w7TdXeR/phemRDjji2ZfztOxegdE9mUaTXxls7PfH23wtZNWjSHRfQIyZTd1ig8LlAAAAABJRU5ErkJggg=="
+                class="rotate-[180deg]"
+                alt=""
+              />
+            </div>
+            <p
+              class="font-normal text-base leading-6 text-[#E4E6EB] text-center"
+            >
+              MCS develops customized IOT software and hardware that can br
+              effectively employed in multiple industry and research settings
+              without hassle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- healthy work and life -->
+    <div
+      class="mx-auto max-w-[1192px] w-full px-6 md:px-12 xl:px-20 my-20 dark:text-white"
+    >
+      <div class="flex items-center justify-between gap-6 flex-col md:flex-row">
+        <!-- left section -->
+        <div class="w-full md:w-1/2">
+          <p class="font-bold text-[32px] leading-[48px]">Smarko:</p>
+          <p class="font-bold text-[32px] leading-[48px]">
+            Healthy work and life:
+          </p>
+          <!-- list -->
+          <div class="flex flex-col gap-3 mt-3">
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                01
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Healthy air. less noise. right light
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                02
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Healthy workplaces
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                03
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Healthy nutrition
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                04
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Prevention of health threats
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                05
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Mental health
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                06
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Fitness and sports
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="flex items-center justify-center w-[34px] h-[34px] bg-[#94c246] text-white rounded-full"
+              >
+                07
+              </div>
+              <p
+                class="font-medium text-base leading-6 text-[#111111] dark:text-white"
+              >
+                Health at home and office
+              </p>
+            </div>
+          </div>
+          <p
+            class="font-normal text-base text-balance leading-6 [#525252] pt-3"
+          >
+            Flagship development: SmarKo Health ecosystem + Wearable sensor
+            device
+          </p>
+        </div>
+        <!-- right section -->
+        <div class="w-full md:w-1/2">
+          <img src="/assets/smarko-cycle-DcGK66dc.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- goals -->
+    <div class="container w-full px-6 md:px-12 xl:px-20 my-20 dark:text-white">
+      <div
+        class="flex items-center justify-center gap-2 sm:gap-4 flex-col sm:flex-row"
+      >
+        <img id="head-line-left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAINSURBVHgB7dzBUcJAFAbgF3LyJgUAawXagaEDO1Aq0A6Ao0crMFSgHYgVaAeEwMFjuHkB/F8mqOhsyEwWZtj5v5kMhjfJ4CbP3X0bCcTCGHO6Wq1ugiC4xO6FvlWEEt0QG4VhOE5AiDwV/H2jSIxbJMYddk93nWC9Xg/SNB0KkYe2EgTJYXDDv8hPb1FVgoTqsjch33wnSI3k2GCSkHcamx9qJofKE0yHaELkiTxBcFP3pV5ybBjMX+6EyBNBMbSaiDsZhlpnGGllQnTkGsvlMhK38vKwEHmgAdfiXiREHtA5iBHHMMQ6FyIP7CVB9nROooMLOp3OWg5gOp0GZXF8Di0UGFscc6XufD4f2+LtdjtGz2UdLmJe1JvNZnHJ8QMc37fFUciI0zTt2eKtVusGw9VHsRujDbq2YJViSYU2LL2W+HxmMplMS47XUn9ki1dow9JrgN9viDYc2OK72nDXNUATRsVyhU2CNjwrif9rQ+1BEnEvESIPaA/yhNcrcav0ryXRsWigS3wVx3DOkRB5QIdYMTbXi3pjIfJAmGXZZ7PZPBFHaxc6EcPw6lmIPJBXRfQBQ9zYb1K/PLuzSkB0TPKHFfW5KX1UXepVn5LiHETe4D9MEZUIf+9gPpItFosHzEk0caIKx2vPc4+th9z4ECLPWFdmtTfBi65M6sqoke0vbXgvysMxH2snn30BW/zbbxRN5msAAAAASUVORK5CYII=" alt="" />
+        <img id="goalsLogo" src="/assets/goals-logo-B9gbwYPu.png" alt="" />
+        <img id="head-line-right" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIHSURBVHgB7ZzPUcJAFMZf4ORNCgDWCrQDQwd2oFSgHQBHj1ZgqEA7MFagHWT5c/AYbl4gfstEBIcNUfb05vvNZDLJy2bCS755f7IkEkIUY4w5Xa1WN1EUXWLzwu0qTdYtsI2bzWZqwb7xkRCikFIYtxDGHTZPDx1fFMVwOp2Ofu+nQIg6IA6DB/5FfqJFXSwE1duOJhQIUcUR4vhmRyQNIUQRR4rDsRaYS9HcBgVC1ICHeiDHiWNzKtQvrnZhikV0UKZWmYQjR6p1xghCVLBcLmMJy7o9TIEQFTQajWsJT0yBEC0YCQxSrHMKhGjBSHhM1O12i+09k8mksnDH8VnVxSAX7M3n89Rn73Q6CZTpDYfI+/qz2SypGD/E+IHPjkItwRvRvs/ebrdvEI4fxU8KH/R8xjrFYA0fFlV2XJ/JsmxSMd61MmOfvYYPK+8Bft8IPhz67Id8eOgewIVx2Y71YeHDswr7QR+GghGEaMFKeCzbvEQFiChPWF1JWFJGEKICpIyvEhicc0yBEC0kWHIJS9oUQhSQ5/lnq9U6kYrmxV9wjQo0Cp5ZgxA1uAmGeLDf5PiW76aLxhSLqMFa6+ZPuRa9lf9jy3OsYQQh6gj5hynWIEQdqEfyxWLxgJrEBYC4zhAI4x5LH9r42DYwghDVuGiClXtz72YOGNn9aMN72R5OXHq2b/wXNN/U+4+6phAAAAAASUVORK5CYII=" alt="" />
+      </div>
+      <h2
+        class="capitalize font-bold text-[32px] leadin-[48px] text-center [#525252] text-balance"
+      >
+        mcs mission is driven by three major united nations sustainable
+        development goals (sdgs).
+      </h2>
+      <p class="font-normal text-base leading-6 text-center py-3 [#525252]">
+        our projects typically address at least one of the following (sdgs)
+      </p>
+      <!-- goals card -->
+      <div class="flex items-center justify-center my-12 gap-4 flex-wrap">
+        <img src="/assets/goal-1-Kz84SMup.png" class="w-[237px] h-[237px]" alt="" />
+        <img src="/assets/goal-2-hk15B5iw.png" class="w-[237px] h-[237px]" alt="" />
+        <img src="/assets/goal-3-DPc9n-gC.png" class="w-[237px] h-[237px]" alt="" />
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div
+      class="container max-w-[1192px] w-full px-6 md:px-12 xl:px-20 my-12 dark:text-white"
+    >
+      <h2 class="font-bold text-[32px] leading-[48px] text-center">
+        <span class="text-[#217dc1]">Our</span> Projects
+      </h2>
+      <p
+        class="font-normal text-lg leading-[27px] text-center text-balance py-3"
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s
+      </p>
+
+      <!-- project 1 -->
+      <div class="flex items-start gap-2 mt-8 max-w-[850px]">
+        <div class="relative mr-4 flex-shrink-0">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+            class="absolute -bottom-4 left-6"
+            alt=""
+          />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA5CAYAAACLWl2QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS6SURBVHgB7ZtNchtVEMe73wioggroBjybA2DWLCydILlBxAnsJUVZsQwuip3jE0ScAOcEIzuwjnICD3sWSlVWDpqmezwWki3J6n6jN0rKvyqVPizPx/9193vdr4UQiN9Pm/A5eH65U3zgitf/k0PGn2X8PMp+bQ/hAwHBgD9IW841domoBSCPlRkh4CCH8Ut4D4Pst3YGgfgfU8/Ct6BKeCBVwoggiMmhUoyFsEj9/P34KEQg/1PawcS9gApBoL5b5YsyKlvdixTRpVWJIhBQBz9xl9vPXh3ChnGvMN88+/MpX/zrKgW5DVHe2zo4f124xYawVJjtg1eHOY37/LIJ6wZhhwcg3RRxFgrD5r1HmPcgLr4QR2a6mpkrjIyamDfUg3ePkkqDqYW5wsioQQz3WQAH5Se+m3agRu4IU16Qh5pBcCd1utQdYfiCNmXqbMKXsA81MSPMpljLDUhury6raUy/CbUWjg0ZKy350Kh4TywyouRQ1ptrwhfQ4efnEJmJMLLcB6O18BL6LCc6zY7bg3l/F0ssRfegBF3yGJYJ43gQiAaLD2AbmEmu5LsXL/gGO6CE1zpH2c/t3n3f8720iTnPdlRm4Ro+a/jLg+//BgO+e36JygGZyZXQsOSXA6wiipD12iNyeRtKN9NAV1c/QGQKYThDlVH0oCRP6Ejz/UIcyk9BCVKyC5G5tphEb96FtfQM5YJGES+UVkM7sWena2EMfs/B9iUYEKvhwKSt5N1UCaNRCIOQfAta3sEAjBCOLaLqg3YA1xaDpDspwTB73lYH0en/By0usjAyjYJynickuyhCwyAMxnalfw0jQfQGAijijDIAc3rwNURkpZrvHMIsBsSblMdAiDwr5QYTlb2iQJAwAx0eIuJ4DaMfCVeBxWD4MdaJY5u2mGj4TdH4LSjZOv4rWpyxxpiPngdhFvAgzAIehFmAA9vsEL6mwOQrUEL/XKkDthUHY4MwebgwaJgNg/IzJa6KNUkkol6nM61iXfgqlBNRr/k+r7cyiIiDT/Uj4RCDF1raAnVwRq/EleVJ1UmJqxUQQFlj1hGY0WspC1VaMyX9jc2eVR+8o7uSnDPPtaPRDMxbnoAWNBS3AnDWk4bs9SC6x6DlXR3CGGqw1g13U+NAaI3ZQCFMueesPbG6TUOEtDQOEOTnEJlJrsQ7hOotDbaaQ80M4x4lJ2CrxJ1BZKaTyD4YwMSl7B5LLUd6+ra7F3+QoWmAyRZ1UayTxtSrYZk3aeOGuMfJVvd8r2yHfzPJv3iFjCj7ztQiKX8b4K3gAdTARBjZ0vAH6SnPGNbmIV90eosRJtMf2wS5Qds4UBWz9RjThvv6MDcOVMCMMNY2jXVRl7UIdyt4G2I1RadWTdYi3BGmtJroHUy3L2PVTq11Mbfmy9PjWY0uNaKkaEmrlYXFcBZnnwh+h8iItdbpQjcs3SXIjnc7ES1HXLgt1gobwL3bJ4XlQBFzMlgTRDRg9/mujhXuIlbaV8p+affF73lEq3atTETPjlvtTXCfadS/ovW91POSv4WET7mw0gI9I1nmL+skrxJrA7Tp58WTk0qbmnRkIT8IvBTJ6dZ+EXLZlEV4y7sRQy68D9kyohacrML8B2xG2SNwWWByAAAAAElFTkSuQmCC" alt="" />
+        </div>
+        <div class="">
+          <div class="flex items-center justify-between w-[260px] mb-2">
+            <h3 class="font-bold text-[26px] leading-[39px]">RELEVIUM</h3>
+            <div
+              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+            </div>
+          </div>
+          <div class="relative">
+            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+            <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+          </div>
+          <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+            Pancreatic cancer has the lowest survival rate among other cancers
+            and is responsible for 95,000 deaths every year in the EU. Its
+            treatment is usually palliative, aiming at slowing tumor progression
+            and at symptom management. The ultimate purpose of this project is
+            to improve the quality of life for advanced pancreatic cancer
+            patients with the support of state-of-the-art technology.
+          </p>
+        </div>
+      </div>
+
+      <!-- project 2 -->
+      <div class="flex items-start gap-2 mt-8 max-w-[850px] lg:ml-40">
+        <div class="relative mr-4 flex-shrink-0">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+            class="absolute -bottom-4 left-6"
+            alt=""
+          />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAA5CAYAAACyPezLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbjSURBVHgB7ZtdchNHEMd7Zm0eEkiUEyDIBeA5lUJ7AuwT2D4B5i2VAiwDSeUt5gQxJ8CcQCIkzzEXgOUEUSpUpQrQdLpnR7Jkfex2z+5KpvhRRrK1q2391dvT09NjIJL2fq8FX0Cbnt6ABFqA9DOJgwws/TgYZD+np7BGeNsvQwcM2U92W5NcHb3mcPg2PD3lz6C13YCC9r0eGZXcNohs3A3BqQO65CnC8Cl8gH72S5pBw4xtB9ziXwWnqmwXCdy+39s1kOwAkLAVYMAcuw/DwyaEZmGNSQ6atr2UwO0fem2zmfxWlXEzRhjbff3w+0OogZptzxDcYfYoPV50QKHA1x+8vIPouvS0BXWCcIof3XaV3kxeu0VfHolbr+3LHGSpwNfvvTxA48Vtigw/uLQKkb998McODVTH0BCLRF4ocPDcI2ieDP91N7OjdABKguc+g4ahcHGXwsWUZnbegRy3ViSuv7y9wjFTeTLHXGN/hRVgwB7w9Sf/Nldgs2l7sEKQUij2QlCQD2ii9KtKWuH6Y2YE5lQMVmfgGB6c/ERAQG57PZlOebDjc+3AjMDs5rAetOAr2JecsEa2j+++KYHXxXtHGLR3ynpx8Jo2KEDEPg9QOHR7NPZs83P6Yx+U0N23M3q+MfVCpAdQ7MzoG+uPf0f6wMbwVFqbh7bgS9ilx+IB1/gZJkhBRyP/T+m89z/KZ65+wJTa32r/2LvB9YuxwDEeQPP6YzfEJ4sKIsHQA837G5vchhICG0XspRz/cIG4Hp6hke2tILIUdqzTsxDhPUAOe8DrR529ZdUmNhQTd5NUUFSksHPt8Z9Xlx0RUqM2yMiyh2m38KA8r5Xn5DYvgo0FrsMDJsm66QCtS0FhLP73fnvpARuiil7+nlRDKH0suqcgxBrztX/k/zhegNwDBnT2seQELzK6JyAkhIklByhCW3I2VhTiNHdejg0XE3sAefwJCZaBlA1Q3HK43D6UO4fIdl4wUBJCRHILhDjE56CAvZhii9QjWuEuW/g6yFDXOaT4LML4dApkvBPcYudAM3xOI3MHZPhRee4rBvqGk8LSGJnAjvRJRGewA/7Dj3maZlAWIqh2G1PtovMz8RdqF4exUPA+hrqw8hDqPyOf2u76mZLoFqPs4S3EsCEfNEaj8iow1opD6CgltfBR/+1oCQOM6A5ANHI7K8DHflRo9G4ksIZIgfO3EA40puYlq0UkyR0QQiWD/iiEWh/A5e8QPQobNBnIaFxgX7wH3AUxOJ6YWN8sIsXGe7CC5j14M9EVvyYmMXamE6chEIZxA2XN5AUqufdy4WtyEqOLwSuiqOhTFXlo0JVuXYJTNY4LJXBThDXJNgg5773MZ4HPcf3gd679tkFOdt57mQsl8Jt739Uat32jjcN9UOBbqOYUkCz5dWOFj0kMJI3E07LEdDH50LCgP83CUCGwU91Cawu3WUW0iHFouLvoRUv/VuLBYFGaHmZQA5E9bBkthaW+BLsA6zvQpdh4D0Zh/s0r1lAxHBYixB2QuNtFhXsLl+QeTJWt6PhpxCN1Xl+titjOUVr62iNxC6uCVlPZcoDfQAQFqxPzwepCBKdiUeICifs4PSlzbCi4k/GCkhzNcuT10Uk0IcboFx5HcJcQd25SKrYFSry4Szraz+PzYHTuFchoRU1bTcEq8TwiPdhPfy/bHkJz4jL5REPhHfj+/R4o0fRg0C3ZByX5Pg2a/hpF4TygEZfJBR7KFzAljXmTaBoMuYANSvzuok37l/SaE3AvR6oRl/ECh7YnaTYhbi9VV6kQX4AC3gZhjC/caEuyeZ4bcfeMaxH0LYn7HMiLDyabjQsvtpnoCikOSo3Yk/hMIW4bxGgSETW4jhfP8416uq0DRfvcIjcBZm8e3bpW9mAOW+ZK8iym0527lmj6u7dshlb+vSa4dv/F36C/nQYGTJ9mRq/OCkjJVeMbRvQfVjK4jAczfbzNGxpLdF2WZaoBmxvzyBu1TdgtToHo/Ik0SN4QPUPJJr1wB/LWLfUSGDnICX6EjCZCu1ANp1MezE0oZmjfAKxoifwcXAbk3uOi40KDt3rrV12Qwx5OFdy17aU1MZi3QjAX1IeEupld0cjbSzNYMRQLn6jaY9eMGYGDF6tnaRWRVTnQrJK5a3KcWHP8gNXg80/4RFi46Ekid1cQj0sVsS8SS1eVSeT9Bj25kpnTulG4bO89GXxMzqAm/E7LxN381MRlSvVFhH1uafDmDCrCC8uVqsedtIpp6TqyUfbAEBe7NBk5ovLmlkGzQ0WIDgjxi5f5BpqTmCrVRUG6U2IGX03jPglaBgqLoS1eMTZ5PcJ7Ja3hvfL9F5egX8cAptkG0RCD/wFcYSmsiZ4dQgAAAABJRU5ErkJggg==" alt="" />
+        </div>
+        <div class="">
+          <div class="flex items-center justify-between w-[260px] mb-2">
+            <h3 class="font-bold text-[26px] leading-[39px]">ONCORELIEF</h3>
+            <div
+              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+            </div>
+          </div>
+          <div class="relative">
+            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+            <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+          </div>
+          <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+            Thanks to advances in medical treatment chances to survive cancer
+            have increased over the last decades significantly. Given this
+            situation, research and innovation are needed to monitor and assist
+            post-treatment cancer patients and increase their level of
+            well-being.
+          </p>
+        </div>
+      </div>
+
+      <!-- project 3 -->
+      <div class="flex items-start gap-2 mt-8 max-w-[850px]">
+        <div class="relative mr-4 flex-shrink-0">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+            class="absolute -bottom-4 left-6"
+            alt=""
+          />
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+        <div class="">
+          <div class="flex items-center justify-between w-[260px] mb-2">
+            <h3 class="font-bold text-[26px] leading-[39px]">EMYNOS</h3>
+            <div
+              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+            </div>
+          </div>
+          <div class="relative">
+            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+            <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+          </div>
+          <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+            EMYNOS is a European Commission-funded project, managed by a
+            European research and innovation consortium in which MCS Data Labs
+            participates. The acronym stands for ‘nExt generation eMergencY
+            commuNicatiOnS’.
+          </p>
+        </div>
+      </div>
+
+      <!-- project 4 -->
+      <div class="flex items-start gap-2 mt-8 max-w-[850px] lg:ml-40">
+        <div class="relative mr-4 flex-shrink-0">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+            class="absolute -bottom-4 left-6"
+            alt=""
+          />
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+        <div class="">
+          <div class="flex items-center justify-between w-[260px] mb-2">
+            <h3 class="font-bold text-[26px] leading-[39px]">DECIDE</h3>
+            <div
+              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+            </div>
+          </div>
+          <div class="relative">
+            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+            <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+          </div>
+          <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+            Telemedicine, artificial intelligence, mobile sensors – DECIDE uses
+            a variety of IT tools to enable guideline-based care at the highest
+            level even in care areas outside of a university clinic. The offer
+            is supported by specialized diagnostic and sports-therapeutic offers
+            from university medicine. The focus is on the areas of oncology,
+            psychiatry and sports medicine. In addition, the data obtained can
+            be used for further research via the secured possibilities of a data
+            integration center.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- project 5 -->
+    <div class="px-6 pt-12 md:px-12 xl:px-20 my-16 bg-[#217dc1]">
+      <div
+        class="container flex items-start justify-between gap-8 flex-col md:flex-row"
+      >
+        <!-- left -->
+        <div
+          class="w-full md:w-1/2 flex items-center justify-center flex-col gap-4"
+        >
+          <img class="" src="data:image/png;base64,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" alt="" />
+          <img src="/assets/mobile-Cx6NiXTl.png" alt="" />
+        </div>
+        <!-- right -->
+        <div class="w-full md:w-1/2">
+          <div class="">
+            <img src="/assets/05-S2-v8Ro-.png" alt="" />
+            <h1 class="font-bold text-[26px] leading-[39px] text-white -mt-9">
+              SmarKo Health® System
+            </h1>
+            <p class="text-[#EAEAEA] font-medium text-lg leading-[27px]">
+              SmarKo Health® is an award-winning sensor- and application-based
+              technology focusing on the needs of patients and medical experts
+              in the area of remote diagnosis and treatment. The functioning and
+              tested prototype was developed by MCS Data Labs GmbH, Berlin
+              (Germany).
+            </p>
+            <a href="#" class="learnMoreBtn my-6 inline-block">
+              Click here to learn more ...
+              <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVHgBrZLRDYAgDESLcQBGYARHkI1YwQkcQVdwAldwAxjBDWoJJhIiSYu+pOWj9Og1ADBBxAFaoWaHCU9h8lrH1ND3aSj2UoQ7xYoP/i8RrWKimmRBc3Z/igIekrcWDu4Sa5w9JSucILewgQSyu5RL/NJsJM2u1iz9iYHCKqUCSKFXxzfPF4grhoSAtmr1AAAAAElFTkSuQmCC" alt="Right Arrow" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- use cases -->
+    <div
+      class="container flex flex-col items-center justify-center px-6 md:px-12 xl:px-20 my-20 dark:text-white"
+    >
+      <div
+        class="flex items-center justify-center gap-2 sm:gap-4 flex-col sm:flex-row"
+      >
+        <img id="head-line-left-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAINSURBVHgB7dzBUcJAFAbgF3LyJgUAawXagaEDO1Aq0A6Ao0crMFSgHYgVaAeEwMFjuHkB/F8mqOhsyEwWZtj5v5kMhjfJ4CbP3X0bCcTCGHO6Wq1ugiC4xO6FvlWEEt0QG4VhOE5AiDwV/H2jSIxbJMYddk93nWC9Xg/SNB0KkYe2EgTJYXDDv8hPb1FVgoTqsjch33wnSI3k2GCSkHcamx9qJofKE0yHaELkiTxBcFP3pV5ybBjMX+6EyBNBMbSaiDsZhlpnGGllQnTkGsvlMhK38vKwEHmgAdfiXiREHtA5iBHHMMQ6FyIP7CVB9nROooMLOp3OWg5gOp0GZXF8Di0UGFscc6XufD4f2+LtdjtGz2UdLmJe1JvNZnHJ8QMc37fFUciI0zTt2eKtVusGw9VHsRujDbq2YJViSYU2LL2W+HxmMplMS47XUn9ki1dow9JrgN9viDYc2OK72nDXNUATRsVyhU2CNjwrif9rQ+1BEnEvESIPaA/yhNcrcav0ryXRsWigS3wVx3DOkRB5QIdYMTbXi3pjIfJAmGXZZ7PZPBFHaxc6EcPw6lmIPJBXRfQBQ9zYb1K/PLuzSkB0TPKHFfW5KX1UXepVn5LiHETe4D9MEZUIf+9gPpItFosHzEk0caIKx2vPc4+th9z4ECLPWFdmtTfBi65M6sqoke0vbXgvysMxH2snn30BW/zbbxRN5msAAAAASUVORK5CYII=" alt="" />
+        <h2 class="font-bold text-[32px] leading-[48px]">
+          <span class="text-[#217dc1]">Use</span>Cases
+        </h2>
+        <img id="head-line-right-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIHSURBVHgB7ZzPUcJAFMZf4ORNCgDWCrQDQwd2oFSgHQBHj1ZgqEA7MFagHWT5c/AYbl4gfstEBIcNUfb05vvNZDLJy2bCS755f7IkEkIUY4w5Xa1WN1EUXWLzwu0qTdYtsI2bzWZqwb7xkRCikFIYtxDGHTZPDx1fFMVwOp2Ofu+nQIg6IA6DB/5FfqJFXSwE1duOJhQIUcUR4vhmRyQNIUQRR4rDsRaYS9HcBgVC1ICHeiDHiWNzKtQvrnZhikV0UKZWmYQjR6p1xghCVLBcLmMJy7o9TIEQFTQajWsJT0yBEC0YCQxSrHMKhGjBSHhM1O12i+09k8mksnDH8VnVxSAX7M3n89Rn73Q6CZTpDYfI+/qz2SypGD/E+IHPjkItwRvRvs/ebrdvEI4fxU8KH/R8xjrFYA0fFlV2XJ/JsmxSMd61MmOfvYYPK+8Bft8IPhz67Id8eOgewIVx2Y71YeHDswr7QR+GghGEaMFKeCzbvEQFiChPWF1JWFJGEKICpIyvEhicc0yBEC0kWHIJS9oUQhSQ5/lnq9U6kYrmxV9wjQo0Cp5ZgxA1uAmGeLDf5PiW76aLxhSLqMFa6+ZPuRa9lf9jy3OsYQQh6gj5hynWIEQdqEfyxWLxgJrEBYC4zhAI4x5LH9r42DYwghDVuGiClXtz72YOGNn9aMN72R5OXHq2b/wXNN/U+4+6phAAAAAASUVORK5CYII=" alt="" />
+      </div>
+      <h2
+        class="font-normal text-[18px] leadin-[27px] my-3 text-center [#525252] text-balance"
+      >
+        Lorem Ipsum is simply dummy text of the printing and <br />
+        typesetting industry. Lorem Ipsum has been the industry's
+      </h2>
+      <div class="mt-6">
+        <img id="" src="/assets/usecases-DY8GISOQ.png" class="z-20" alt="" />
+      </div>
+    </div>
+
+    <!-- project 6 -->
+    <div class="container px-6 md:px-12 xl:px-20 my-10 dark:text-white">
+      <div
+        class="max-w-[950px] w-full mx-auto flex items-center justify-center flex-col md:flex-row gap-8"
+      >
+        <!-- left section -->
+        <div class="mt-8 w-full md:w-1/2">
+          <div class="mb-4">
+            <div class="flex items-start gap-2">
+              <div class="relative mr-4 flex-shrink-0">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+                  class="absolute -bottom-4 left-6"
+                  alt=""
+                />
+                <img src="data:image/png;base64,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" alt="" />
+              </div>
+              <div class="">
+                <div class="flex items-center justify-between w-[260px] mb-2">
+                  <h3 class="font-bold text-[26px] leading-[39px]">REPEAT</h3>
+                  <div
+                    class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+                  >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+                  <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="font-bold text-[32px] leading-[48px]">
+              Supporting MCS Flagship development SmarKo® !!
+            </h3>
+            <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+              this project aims at significantly outperforming existing fall
+              sensors.Falls in elderly people have become an increasingly
+              alarming issue causing societal and economic harm.
+            </p>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="w-full md:w-1/2 flex items-center justify-center md:ml-6">
+          <img src="/assets/project6-EiJY2dZl.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- project 7 -->
+    <div class="container px-6 md:px-12 xl:px-20 my-10 dark:text-white">
+      <div
+        class="max-w-[950px] w-full mx-auto flex items-center justify-center flex-col-reverse md:flex-row gap-8"
+      >
+        <!-- left section -->
+        <div class="w-full h-[240px] md:w-1/2 flex items-center justify-center">
+          <img src="/assets/project7-DZHfUcxm.png" class="w-full h-full" alt="" />
+        </div>
+        <!-- right section -->
+        <div class="mt-8 w-full md:w-1/2">
+          <div class="mb-4">
+            <div class="flex items-start gap-2">
+              <div class="relative mr-4 flex-shrink-0">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+                  class="absolute -bottom-4 left-6"
+                  alt=""
+                />
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAA4CAYAAABjXd/gAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAXhSURBVHgB5ZxPVhtHEMa/6hG7kJATZOACxicwOoGdExifwPIuL88OEPPyssM5gfEJYp9AIn5Zh5yAyQmi7PISayrVMyMiiZaYqm4JBL8NCGYG6et/9VV1QzCSv+zvgbDrkD1g5l35fsv/eOayAqCCgGGJ0RkY58Vxd4A7DGkurkXMHhN4X15uwYYITIPy39FR8WO3QAT5q36PkD3GLYFHoxetBM2/6ee0kb2VW/aQEBH2NEZYaeBTIvcUtwTmsuuuu2jnu4/PacP9llrM6g1IT5dn90WYJ7gjLBR05+CXE1H9DezDuw259LKfpeEOcAeYK+jOy48HXHIPK0Ia7tDPiVhzgoJWYlJ5iBVDcCfVwrfGXBHUL0A3IeYYGf5v815/mVPMUrkiqF8kcLPkbjNb2/l0SlCZw/ZxNThfObL69/xIwRoyJajMYbemZ7iN9eyll4I2i0GOSKR3FfJliEh8jLpmc2nhbXXn8iVlT/3HMDCUkOcn+TqY9elNI+2b3czn8GHU4dzfd9BjLGcBdaPsRBq1teEQOz6ovwr5YX+LRu5P6Ck4K7vF4WLrKM/P5fl+scuhfP7F60fbWDG11XYXmntEh22vQz3kP2EPelqJWV0o1/hroZ8K8vzb/i5WjXL+llHyYaxDLSjpMzbykKM2Yo6pRK2nBh1kamwz1WjV5i0Yp+NvK0GJWNsLhsXr7im0dPBGeQfIrTg9N4KfN3PFHX4xej9+4XyLiMIqQaUF38OA9NIhmAZQwSsd8trQ0Y/UyddO5k/1Gy7BZzDCPnOvY2v7+NevsAJMxibDYPKl82UMaBnhHHbU9/Lf/zzECiDOVOGdjNTT2XXESZfJoaT4oWsXtGNoDF6+Ha6sLukWo3LEVxZZ6aGZbjhxVO+EJjK4hFaQX9BaXV9wDHQsR6zLxjNxAlvpq6HtcURfYIlUgXxdeGyNpDiDIaATgXIocEoxQhDpAvxy2RmwDXWsW8wLGx0tt14UpqToXp4Sbag09u0hfGCvErRk/gORSOikeoaUm3MsCUuoVGZ8NO9315aR7zqSCXuuuX7St4e414JW6UWlS5z07SHudw+lTJunnfLtIe6toKZQaca3h/CCqlZciQmjfTVBZyaaskpaLDWrGd8ewnGC+s86os15hnx7CKcPsvlLxOJYGfvyX0iIKVQK+PYQjpkKKCB28ak0bbKD493ZJPqcJw/aJoQk2zTStT4lcVbaZySblmzlcn7X9kqfD9Vmj/KYermx6BaV4ZqCMlUgjwW+PYQzDafPYBFl/BdzaCnTDPkmVGpda/cs8u0hnCnh6yIqkYYKa1RCexJDqLTIt4dwTSigmqOkVPAIRrThCit7yDwsvfM63x7C1TeqK5F7lo2xpiIY8+9IQZ3z1M39rC97N9ZTXYmsdxsrFqe6h5h295lK1rMY/nZhOVNVC5otzqAE8Ye+NrOTNpd64ZuNvDl0FCkOillGRhvfHqIS1LYBod5yuP3q7GLR8Pe/o01/LEe/ulOi+VNbHq5o4dtDXG5nZBp9kGGxBz3+WExfhJWFjc6pqTk1xxVzRJRY2tq9hW/OUB72vv3CUp3FhKDVsB/BzzNWAbb8YsX/v6soNHZvIVWopNv3GtOQl/lQP+xNu+OWRnu7Nw9bzjOuIacTzPXuuBtP51UfyrK7bwbX6Rh2Tsc15JSgTS99hpsm4yTvganch44itiGvlEB8zYQZ0cPNiohwVBgXhEksoVKKqCJcU+qUPUMWKho/hxffdw+RAIuJ0Pr2EEFBq6Hvyq+BtIndRYiY72R09JAAS87T4ttDzK16NgcNHvoPiiVT9czj7j5SQYZA3uDbg3+6zUV+PmqGUI60+IMMz1L+HxLLkRgkPL7Tqi7vVz5/LEaGhV99C0QiLmogz3rhP0Tyf+piyHlafXsIk59p5qgnBHoAIp+9v85dSTjGsshVe/MHy/rPOM0BNnXeYHxoCwmINIg11UkS/yE+zQjbqXrzsEq+rIDKt3ewr7lHFChSmIgx/wESFoGDQ7KINwAAAABJRU5ErkJggg==" alt="" />
+              </div>
+              <div class="">
+                <div class="flex items-center justify-between w-[260px] mb-2">
+                  <h3 class="font-bold text-[26px] leading-[39px]">REFLOW</h3>
+                  <div
+                    class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+                  >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+                  <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+              The European Commission has approved a research and innovation
+              project titled ‘constRuctive mEtabolic processes For materiaL
+              flOWs in urban and periurban environments across Europe’ (REFLOW)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- project 8 -->
+    <div class="container px-6 md:px-12 xl:px-20 my-10 dark:text-white">
+      <div
+        class="max-w-[950px] w-full mx-auto flex items-center justify-center flex-col md:flex-row gap-8"
+      >
+        <!-- left section -->
+        <div class="mt-8 w-full md:w-1/2">
+          <div class="mb-4">
+            <div class="flex items-start gap-2">
+              <div class="relative mr-4 flex-shrink-0">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtBU9NAFMdfNk2aptRKLVUQB2X04niDowdnHC8evOnVmx78AFx7xY/gR9CbzujBcfwC9OKMXnRQRoSBlgKWhqRJdt0XLKQlpaGNJdnxd6BhszD7n/eyu9n3rwRRU2ZkEt5o8q6qyRk9DYRpborKskMUfzfeZis2teUUcc3fluHmW+Z6+YEBESNBFHBRReN1NqeMFSxb0hRVJjAAdsulekZqUtNpLC/e24UIGE4gF3bdenfBcLXCoKJ64TrUlqht/NwpVOHFvA0DMpjAfygsCMVt1r5tlXYGEXpqgTfLH8d2DHZ5FML8YERV5lRPm7rhBfKoXWt9mKBEKcAZIll72z+y9zehLNFQ/cN0gidLykypOc2vNIgBGM3Vem4lTMr2TzMubrrQmIGYiEP40nIwJj62fn1PjuBfcfgPIYaEiWRvgTEX16afyOAU5RNKEsQhOEZvfuBjDrof2IizZRLE+dCuNt+Wgm4cEzi78D5/1kvBILD02PgEX6O72zsF8ueuJaUmIKGkTbjUnaodv0xOQT5hqdkBjh23kP62I4E8eqrTTGz02tB0btwfxcOLK+friReH8GVD9kfxUCAjig6C4I+i9wNnziQ/e91gFPEFHK89gRZL5UAw8HQBPz2BKrAsCIakqGlMU3myvKQTyRkHwWCUEZ18ahJ5txWb16CokUHVCFMsYWbPbuSWniZUT430bGWUMGpliAyOCoJCtRQh3SfOIoHahE3PNv8FJh2CVR4QFNRGbIe4IChYniMalUwQFKw9Enc/ZYGgmJJlEDevChtBF1omWf+8bBFeWQXBwPTEkjiBV49cU1f2QTAIc7x6v7cO2oa0DYJBzVwDPz2Bte9rhkhpigWZ5cV5rxJ8sJPx0vTcFgiCTORm+/pwq8Ynm21Rolis6bX29dFeVJAooiOj4qsVdmy2MYqYv5BQcOx5tJv46HybwChSZQMSispy1UpXpffY61Lt+e3GPrXrkDBIxq63Z86O9qDOm1/r+JAmZguHqfnYvlsNutfThDDHy2kbCTEhXKznVio9TAgn2kjiLrKfOKSv0ymuIsOIQ0JZuWIo0ixuZlcrIaxc4c14D1/KpRuFYuaMHRg4W+KEUo7UjOdjdmEp35IaI/fRoBv4vF769aV8a+80fzeQIRZTdm0K8qMwLaAwxreQT2GuHjZqfoayNKPQWtEoutTNRh3RYYW1icaUDgepa7FGjvFq8TCmdMZPFxxw6s/gjjGMsDaRCfSDVWMsrGLtEctzWMEK+loBnsnisSWe7OHhF4+WGYUoP38ATxzXITwaO7IAAAAASUVORK5CYII="
+                  class="absolute -bottom-4 left-6"
+                  alt=""
+                />
+                <img src="data:image/png;base64,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" alt="" />
+              </div>
+              <div class="">
+                <div class="flex items-center justify-between w-[260px] mb-2">
+                  <h3 class="font-bold text-[26px] leading-[39px]">STAMINA</h3>
+                  <div
+                    class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
+                  >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgBnVK7EQIhEAXmghuiK4ESzg60AmMiLcEWrMASMGH4ZFZgCbZwJRgRgotyjqM4s9xL2AX2sft4hCChtR5r+5QgYK09UEpPEE4xxo2UcprPGIYgpTSUUDDGrsYY0dRBhnPuDMuupO9O0AQ1khDCiiqlhr7vRywJjJC1eN6HLo4d5/wGsSALAGRblIj/AOLeuyxGSwefIwAuTSJ67xW8ui/pS8SlxfM3ojTITqwV56TViT9WRgPsu86e+d5/AMr1YKy3qvwFAAAAAElFTkSuQmCC" alt="" />
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+                  <div class="h-0.5 w-[260px] bg-[#A9A9A9]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
+              Prevention of pandemics and the effective fight against these has
+              been a topic for the European Commission (EC) already before the
+              arrival of covid-19. Approved in summer 2019, the STAMINA project
+              started in early 2020. The acronym of this innovative action
+              stands for ‘DemonSTration of intelligent decision support for
+              pAndeMIc crisis prediction and maNAgement within and across
+              European borders’. As a 24-month long activity the project aims to
+              provide fast responses to pressing pandemic issues, way beyond
+              covid-19.
+            </p>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="w-full md:w-1/2 flex items-center justify-center md:ml-4">
+          <img src="/assets/project8-CUv8Dbqy.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- roles -->
+    <div class="container px-6 md:px-12 xl:px-20 my-20">
+      <div
+        class="flex items-center justify-center flex-col md:flex-row gap-2 sm:gap-4"
+      >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAINSURBVHgB7dzBUcJAFAbgF3LyJgUAawXagaEDO1Aq0A6Ao0crMFSgHYgVaAeEwMFjuHkB/F8mqOhsyEwWZtj5v5kMhjfJ4CbP3X0bCcTCGHO6Wq1ugiC4xO6FvlWEEt0QG4VhOE5AiDwV/H2jSIxbJMYddk93nWC9Xg/SNB0KkYe2EgTJYXDDv8hPb1FVgoTqsjch33wnSI3k2GCSkHcamx9qJofKE0yHaELkiTxBcFP3pV5ybBjMX+6EyBNBMbSaiDsZhlpnGGllQnTkGsvlMhK38vKwEHmgAdfiXiREHtA5iBHHMMQ6FyIP7CVB9nROooMLOp3OWg5gOp0GZXF8Di0UGFscc6XufD4f2+LtdjtGz2UdLmJe1JvNZnHJ8QMc37fFUciI0zTt2eKtVusGw9VHsRujDbq2YJViSYU2LL2W+HxmMplMS47XUn9ki1dow9JrgN9viDYc2OK72nDXNUATRsVyhU2CNjwrif9rQ+1BEnEvESIPaA/yhNcrcav0ryXRsWigS3wVx3DOkRB5QIdYMTbXi3pjIfJAmGXZZ7PZPBFHaxc6EcPw6lmIPJBXRfQBQ9zYb1K/PLuzSkB0TPKHFfW5KX1UXepVn5LiHETe4D9MEZUIf+9gPpItFosHzEk0caIKx2vPc4+th9z4ECLPWFdmtTfBi65M6sqoke0vbXgvysMxH2snn30BW/zbbxRN5msAAAAASUVORK5CYII=" alt="" />
+        <h2
+          class="font-bold text-[32px] leading-[48px] dark:text-white capitalize"
+        >
+          our role in projects
+        </h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIHSURBVHgB7ZzPUcJAFMZf4ORNCgDWCrQDQwd2oFSgHQBHj1ZgqEA7MFagHWT5c/AYbl4gfstEBIcNUfb05vvNZDLJy2bCS755f7IkEkIUY4w5Xa1WN1EUXWLzwu0qTdYtsI2bzWZqwb7xkRCikFIYtxDGHTZPDx1fFMVwOp2Ofu+nQIg6IA6DB/5FfqJFXSwE1duOJhQIUcUR4vhmRyQNIUQRR4rDsRaYS9HcBgVC1ICHeiDHiWNzKtQvrnZhikV0UKZWmYQjR6p1xghCVLBcLmMJy7o9TIEQFTQajWsJT0yBEC0YCQxSrHMKhGjBSHhM1O12i+09k8mksnDH8VnVxSAX7M3n89Rn73Q6CZTpDYfI+/qz2SypGD/E+IHPjkItwRvRvs/ebrdvEI4fxU8KH/R8xjrFYA0fFlV2XJ/JsmxSMd61MmOfvYYPK+8Bft8IPhz67Id8eOgewIVx2Y71YeHDswr7QR+GghGEaMFKeCzbvEQFiChPWF1JWFJGEKICpIyvEhicc0yBEC0kWHIJS9oUQhSQ5/lnq9U6kYrmxV9wjQo0Cp5ZgxA1uAmGeLDf5PiW76aLxhSLqMFa6+ZPuRa9lf9jy3OsYQQh6gj5hynWIEQdqEfyxWLxgJrEBYC4zhAI4x5LH9r42DYwghDVuGiClXtz72YOGNn9aMN72R5OXHq2b/wXNN/U+4+6phAAAAAASUVORK5CYII=" alt="" />
+      </div>
+      <div class="rolesContainer mt-10">
+        <!-- card 1 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQhSURBVHgBlVfNbttGEJ7Zpdzeqjco8wSVz0UtCqhdo6f4CaIAvRSxm+gJJD+BksZBLwUsP0F8Klq7gGQXQY9VnyDKE0Q5BZG0O5khuaT+ViTnYK+4u/O3M9/MIJSk/jCqa117qAGaRNgghBAB6rJHAFMEGgOoiQV7Z8z8utMaTcvwxRKCw5ree8pC2k5gOcLB3Hw6Z0UmO0+BX3CdBXd5+Wx9j4gtRhrz5QmzqBNQXbyCuKkgf+s9+e7mvJICqdVDXoa5VJiwF64COxv87LGqPzwOtTaRIuwy53BpazI3s9Y2b+Amk8NGTeNrJ1ysJaTOLwe3A6hAv94fttcU2aoErgpft5xGczM/KRtQ6yQe2dO2z5576FNiRYGL+6O3kFt+dda8afuZR/VA70WyXpjZeFewvbw7GnAsPFpSYt8ZlSnw6p+jLgvtxcIBrs8Obk48gtlLtUu+Gq3u7I76i/vDYX4Hn58e/NWRlXJMnXAJtoVRHb/wveGm8PhiW/bkzLa78pT8L31KeubOxQrU9Bddd9AisRV/TrYxSc+FKZORNfSYgacjSqdHUu9skrjcAmWGBaoWpzem+f4+4QmT0+bNg20MUuvf+s4tu/hLHYQ/ffvHu218Lu44zpLMmHIsPFACr7BkPXgo0LqR/UB8sb5vGSPc+qNZ7Pv4UH4uhnalQDXdpjF65LsIBrNURGM3zilGQyhBC6sGbq1ZtgIkZ9nU9/ZCZ62/R2hon4xtPWndjjdPqKeZEKPGPj6pjNgYImoE7JMw2SLvJUfbBOdp6fjgYJchuSyOF46FAFyFI/wAFWkDOTk45xbPi+5x4XqHCQLVlfuIiO+hIq1azrBtVavYehEGX7mleEDeg0uqDaECJUCSAhLB+LR52yp7F+OAjV0w5SB0IIINqEDLacnp+wIqUSqLn0yRhf/Tr/Xf3/z4dVkWBKpCd5RTCsHJXcQxl2wauc2Pi8XjknwYC2ji1tpAYQZlZ3UtcmvpH5U0kJDm5VLJLKRiXNhO/OZZ3RHZSooEA4KDx1A6mbLMbECcRli6WUl5h8kvwYvRNE7DhdXPlzTsS4EqYvbqzWEDSQ1J438vh99HRefl7Zetn5sEL2IFJHfZCy6SuTrWXhcxtLMc+8t4gbunPuTdVlbyMyBa2Hkvr+sYcXm93MWwSgxc3P9wia4vZBnc6vXc3lpTehzWlB26TpY3r2dm1ikaLnyU9BrizQywJutoqZYvyAZaOnGekG5WsL5KYDqSO0HcwPiFC3kGk1VPpMRzH51z6ox8Hvnt3yi0i71H/MZtWBtqfHVi52zI7XSPsaG7/t0NoxgHH035d0gMr9tmRwluiS/fbFFiOD0OA2V7VUBKpin+eyXpXVQdCxXIFUnGcySM+NI3YrUbRuNhlZ9IBlZj4M5A+fH8M+HmIs9WpavcAAAAAElFTkSuQmCC" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            contribute to ideation and concept development
+          </p>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMZSURBVHgB5VZLUttAEO0eWc7WuYGOwAUAuwIku5ATAMsUH5sTWD4BGMMac4I4uwRSJWMqa5wToCNomcia6czIkhGSkEZAqlLF2+jXmvemf9MArx1YZnDkNBv1umlxDkuI5AZBMD1sjb0iWyGooZ73l3+My9bHQuJavS0IOtKokfptOON/elKIG9lapvGmS0CbSVsC8BBwlLQtFVBM/AAecmr58qZmoFNimxG9eHt2s96WUpcixZZ81UwaEIFyd58EuWBQgxFrS9nW4nu4y4icYCpQXABHDxla8v1W0jb6Yyzfu+pOcPyKp5MNyhVM4Aqk3sHK1TD9aXC9YSNC96FQ6u+vXnXStieT9W1G2M0KCeHV1I+I2I53KxNtKgAuDlazxDEMA+6ESJJDT5LbebbRBoahEOkRIpTJPPeY5L4orYI0zm42upLQfkh+GT6r/DEMc5Pz2fixpEujBhVQRm7W6o7KJ2bUVd681VlTW0CaHIF29qIwJcnnysDTXZfpGJ39XF9Kk++uLMitFLk7E6wFmtDygAhgG6NsEZL8IEluhORWkvyw9c0FTWh5QO550WQy5JAor1Dkb6gCTQHzxqFwOnl/rkoqQz6HEnUrbTqa64JWGR45H+TC4hby2q3sfihoRzDsyDBtJZY+jlqv92wBCxFMOKk2PAq4vxOT5HRId8b9VlFPqNyIBs5akwAtE2bjzzkL5wiV4rC3t/L9+EUE6ECJqDFh64TknwiIoRMSdRoeyes8a2VCAeK0aICoirzcuQceqzLcvn9W3YxUid2p1gsvgLApIYzyv1IHB867TWawj6rZkGqnCaUyPiOf+4dP9UZ4Rhjml+SQo458hhQK4gDXmRw4max1GDC1+7jmXTl6fdptXU2hAgY3a00kdg5Rs5rPGtlqwHzl2bjJZLJ3ly97oAE15snB456o4IwonIprzLTjaSkyLgxJvsupH4iZ/VhHLC1D3ZDouryyAIXHQuIHfl/dqzE+OS9UOZYrnAXZkOShzOVPFhAjJyQRsZ7Lny1AQYXEMHjTAFhVzxzoF+fBUHfX/xX+Ajai0emPCbEaAAAAAElFTkSuQmCC" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            invite other suitable consortium partners
+          </p>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMlSURBVHgB7VdLctpAEO0eyXgZjkBu4BPYUGVIduEIsHcMOgHhBNjBrI1vwDKJUyUMlXXIDbhB2AYx0+kGSRb64AhccRZ5VRTz0XS/6e7p6UGIoOeWi0fWcY+A6tJHwJGnf3WdyngOB2DwrXpiNLosr3tx+vkqOqeinSO74AJQAwGK8pP2kXV0CweCtGr58jqyyVQC/el5GQhOksuxPHCrJ7AnWGFJNuJ3xcKN6LwdsiQsYYYQY2GJ/2YZ0zCYVltksA2IIzaxE4zLphSpFm19Ta2Pk+pCa2/Erl1ghCmzK/xMU+Bp9dqpfJrHx0UBEnbESsHYxekX7E9qEkO3G7Ong0mxchyGLhA2RNBNfMhjceVC9mZS6yEpN1DO3y247fjS67uUC/yYaCeszuZpWABn0jaa7t5Xvo7j88y8t62Axp62mgHRnvu2ZCvzAUUOQgmSm1og0ow0dbPcnoAE0+ZEPJqbdzonY5pxktuEz9sKVO9xCYxWetkUi0s/JDCY1jpkoJHGOA3impVZXgWCAmziQr3z9PI6yB/sLomttcVIm0qUsL35oOqywDL8kT3E3OA4lfutUxFaiDYWKljHorDpk71GhI5YLG4tW3waDSSFNMpSrQEeLk/vh/FxsZ4haEMkLjSYh6C9MmpoK10Ek5SNN9Pa93UCYnaeUZW045aFtbnFv9EERjDjuHB2xUUUdmTxjzzKJb8T5/dQ7zqyOdefbef6pwn44MWpSSg4lkvtbV1KZklFtDZBs45so5w8G0gQyIICvJVUykEl3WYwLibuu+eVoA174kkCu3CI4gAKXhj/BIF1JiMwJXgBMAHyMxqWbyZv2vCXgRzJZbSUm3shH72lXjqH1otKIjmtDngKfDTrz1EvhtePJBw58774MU/MsxaRXDj+rSkVEByA1DxgAO7SLp0A/YfakLWW4BnwPw/sl4oRXgXNTT2xjwhccGk2y0VAqmHbKki5XQ/GHgM3P/gZMM/lAnk3RpUfDMrhgq0nFldPxlDu3BGHBm+USkD8Ex+zLSssuwjBuazcZ9aOeRC6QN5qsjP5rbRKvANXWo93ze+L35ofeWh6urHmAAAAAElFTkSuQmCC" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            lead or contribute to defined technology tasks
+          </p>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKySURBVHgB3VdLctpAEO3Wz1uOoJwg5AIYqgKVXcgJwGvbsTmB7RNAEsjWcAO8i+1UgXH28RE4AtsgpE63kIQQEhgZUWW/KlXNTI96eqb7vZEQQmgOijldPWgSUFX6CNi37H9XjdJwDBlBC3d0zRgAUR6DEarrqm5yowQZQfEbPx4/FoEgvzoFi51BOQ8ZIQiACM2kSY6abNtZALZt9ZMmzWzlCbIOgAttQgRX0Qky1ij9GkNGwOjA91G5rgIcStuxqXda+j2Et4zgBJpc6boKrAEoNMxBKmDrpHDb2OYNtwZ+/qnUdBX/CuXSLy6gc9gSGquf6TjQXfiAJ0RKVfU2wANsCY2l90JWddfmij89vLuEPYJTMNd92fm+FxfIXeDmHBFjj92n5dS2Nl5KIudIymcEWqojSc3Xwn03KYC1UACvJUGGeiDdo6R5ncfKBafwUtoUkRc+5nr7oXJmOdOSCF7E9nJIIfuLJwIhrynGCkt2EoCm6CHH2Dgp3KH/WLbyjgfdXSPCWSYBsOsg5yxErbBF7hE+nRuvm4sLYCwN+QqSLyLYMxSOrue1c4ZqXEs+YY/QZs60pStGjYvE5Gqv6qpRbY8qkBaygShdmRPvveYkOh/nL30ydcUZSBBJjvkDtXtcuF2ioc97QMoDYdEbHrNT1hRyF+NNmXLH+AGwRvTDuhAQVgRHOD/v0RCD2sB6XABh3qcCK6/oQiwLHIDeceH+SJ44+7N4vwmeLmxUwjis8n5BPTedqsNXu0+5ZLvoQkodeDbvN+rCjoQoPV5/AHHCFeL9RnuqIiQUmmJN2ixcg86oEuH94hdvrZ1rITYAdj5ZF4CISHtUrnkCY3pikzQ91s6FOJk5yvnyrxmx+PAT/hUjom8y2QG6CTuwbOuL2Nx3Io5FyOQaXmfnxT8II/4D9Ao9mwASw4QAAAAASUVORK5CYII=" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            lead or contribute to work packages
+          </p>
+        </div>
+        <!-- card 5 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOcSURBVHgBvVdNdhJBEK7qHnCLNxhPIDmAhHkadGlOIK4jJjlB8AQxkrgNnoC485HkDRD3ISdwbiBuA91t1fxgG2eg4fH83oP+n66uqv6qGsFC5+ZFXRh8YwzWAcGHJTAAEwQz1gBf3tcuu7AGMKuc3TSOjIE2rAsD46m+3z0MBtEqyzB3cwMRohksW0wa8OkTdasrmqr7LRJiAo7wjsO6n21O5QS03m0FVwPXDxyHr/yS0GFqMt8T5QMq267rRUk+OsoaBs3hKpszDoNvEal+i6rxqRFhnw5VcV0vaNt6sjtERY7EWjob7Zx3wsbrfCEGE9LeSdqslKHkg7sAc2+/K5pEam0bwCZKOC+aQ9qLsrqSUIUVBIiBiD8d5jur1hVe0QCrvSTLIcDffHA6ahguNZi36959G6JowJOy+nBzGxLENmwAhQK0atcX5FgfiOm67KBZP7f5d6/wA2wA3qLB1na/zWVn2KBNE23s1S7fwgYhHOdF8b+lif8qAGvCKLWbEs5G4blObAXXF65zEdA5FriaYCmUml7EJqLfTImx6zpnDSxDGgGfwIrIFYBJqCxLSZBCjPae9edX7tNopykBYg7QCr+2gn6haVIy26drW1EAwzziyhUg4X54Ezeo0hk17lq1ZCMBeG7SeRQbODhdFG3uyfItVSsUR9jWzdNhY58cObDzhVwfMHYy8sCmxpgTq/4FClDyyj18GDsQqhT+m3ZXrgZSVXXzxlrbl5xwHMAymPyISEI9tdsbuwU5iPI6tdG/7HbhLWBn41IqGO8Fl3MTcLYjZek13/WZuh8XJaEa9IkAcWz3cco30/Kj3ZerAeL+Njtb7HASbzvhi3o2Rl59y/2kyl4arnPxvnb1kYPZH/o2g5k2Aadw9jwnHhA2s/EVQKu+AGkway+a4xUt7ITPxwZEhe5w9C64mptgqkXgwbTKYwqmiziATOURZ+DTRFackLzD7DpnQMpwflDp06GivVp/ZSbLA78ztIEDzE/hIqPgMCMwQXYaJhKCb9t6XZyOXp7zOwOL80efCKz3+XsjJjpBD5FuNoJS9DLvXwd8cjpKk+vs8eyE9FJ6/K7WR1Rmi9pz4tIaumfhTjV2J/Z6elAcWd+KaIDsbhaGVTsWsM1LCfX6yXUTWw89/t+9zADzB5wxodM9jtePnhM3yF4s2JKM+XS0E6ZvysmcB9jzp0o8idXkmHrZsWCm1CDLB5SSg0XrSMCv2frfGpinWyFd2WAAAAAASUVORK5CYII=" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            participate in demos, pilots and clinical studies
+          </p>
+        </div>
+        <!-- card 6 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM7SURBVHgBxVdNVhpBEK7qHsmWG4TcQC8g8F7kZQeeQFhHDJxAPIEx6ho8gbhLMHkCOYDcQI7AmrG7UjUwIwwz/JhRvveGaaqnp6rrr79BiMH5Qy6zo1MPMnbNeK+e745kfNUvnPOtZoEqJ/v3LZFd9gslvjURsHW8/6u+bH0YKs4AR+tdvmXk0nqnNDNVkx8NKhtICEoIkOZBbY3183riJghUGgMrVfZH/yA0DxmWlSf/8KMnYfgy9AwkWAWMEnruc1K3vH4XEgAraY/NuM5hGEbMzePy4XMOtLqduDRRjMjYw2r+dzfWANm5o1OPL8qpy8l2BwZH8BpoSitS31hLxjdimpDDwABWmvaThLO4yMq9MRGcVbOdBiSAy16hgQin3h+CgUW6YF2jZzMeIJfVE0BgIUwfGh5nO58gQVz1D7gkMRcSD1VkoiJeQOLgUC6IuAxdq/IOuLugdInddCRyC3Yu5pIbKb1zChtgbNyz2VhbdvlL08GWNbZnwG079fxPeWjI9ct1j0dRL3NUqsHGHsEGSOkPcqtEzfEGeyf5SRdVsGU4fm9fd8HxfgeXzfP7VrY/Bdjk55ociu/igTJsDVRzyJiK0qpIXikulMlbKe6yG4cGoOdU83/aLGnLIcLuyME7wALc+Ef59pNQdq4BsiT9evXpmQgU95vr/kHWGrxzJCM9ve+k3ANhTtShhpIiojdou2vaQXTjVLP30gNqkyTE5qpF69T5Kszyye0noc8H1BIO92xVI6XNRjsfG3UWNye6mEl7fMBh6vwIXhOi2Qfm6Nj0wKrAf4DP/fQLAaMyj8qsO4YPgC1C4mBqFgbrVsIHuB0fWkMVoUuTGcxd/y1sdP4vw/RdmanOtuiSy7XjvRAp/cJfM1ZC4odgyGc3l+krSSm7nSur6J8xzDNHnE9705B6iKTlyLQcEqblohzsIi1fKEN5wDVKXNOGxLTDQHYeVh5pgEBcZOZIpHC4SdyCdxL0fBkBdn15ICO4CWRMw2fdPovYb8P5DdAdczjPIxMmIwcKPn3Nd1oyZt6f84Ppcz35lvQ5Ji7JodhOaIzblu8DuZ6NGgTG8Nkh8bQzHiKkrj+3an0Y/wDN3o1krbubvQAAAABJRU5ErkJggg==" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            provide software/ hardware against specs
+          </p>
+        </div>
+        <!-- card 7 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgBnVdNdttGDAaGsrqMcgP7BJUOUEV6rdUunRPIXtuurRPYOoGq2u026gmq7Frl9ZlVsrdyAisnMLMMJQ4CkBxySJE2me89idT8ABjgAzBC+AZM7nr7e87eGwJsI0CLP3M/8EejvruGmkCoCVHecJr3ojg35W0Cv1PXCAU1wconqXJygWAVT7XEK1ATtQ1g5UeRbliddd/1z14tOqEh0WwbaqKWAez+xO2IaE4ORPgpfm1JiKAGGlUWGdKx2t5za/ec5sPt8ufZJvgyrsKHjAF/vD+8II2X7Od9/rlGhJmMa4JLsEhHBB4hvU1+I7kIOEwl0TEbcsSGjBHphewPecNh00jTX7vvZmYlpsoHVyz4Gp4EuRTgdAu+y6fz8rO/Lw+PFeFVfIBS8MGuT39YjBMDIhc3H8zpFILLz3ZWEI7Ouv/+BhVw8//gmpVcJWYbmYbADE7Zl3KIkIQNx0nYy+4cnXYXrzda9Yloym5bI9BJVeWC81eLawqC1+JyVj7eav9AZHIwR2aN4+yFxoQcIFAtEwvF7/Ic9f9Z8+My/uxAMoJrQk/et4G/yhPuvP/fnB9ze0wDeibtmDNe9IyFcQgezUKJkb/1p0VxLs8ILGW+yG82mhcJGUFCoA7kkCo6reuJq8wGISMbdF+svHlXnI4h8++K6oDIEplGueiKPZwWIomb5ljzqzl1gaDvrtJxcnVAJ1riyjwxe0rKsdU3cCS6kl/5lbfLwWO0gVwptZA9/UOkG9Zcgg+y+w4TzxiGJ3PvB/e8RzrnmsmY2adKrSX8bA/amcIkmeY3aYC/0rUROQ1Iw8fI7l2vlvYCrvWPZXPsdm9XELWgVBi8KJsqMmAtX1wDMp1tGwSutWlYIOoiXatWWf2Jcd6ubRbCXkBoCo531l28tOftOIuh7AkORZjbw3QcZ1y0TrL7BmRkMtFHdi9QqXLpBZhWO9q1dhM4JzbjuWhNFGBaE3huE+A4v8/a05L1oitjgDDcNKKw03GebrTfycuR3I1KdEo4S4srcya/M4azrHydMXeLMAQ3yx+PEJy/5V1qge2iMkzuftlvwCbkyRaCwu6Yx+3yJy7ramLrKe0FpnxyCh3xZ3zeX8zz3gBIXLuDPz8MhjpgryLOuURLWV9X7wXcRDive/bN1+7hzyFHZgF3VL6MWDJNL0iyIN/DS8CnoHFRiKLu6LACScenr27CB1OOM2kY32gueLRNURZMCTW7TYlhmUJjc+VmOZDe/gZz1zbZHysZhpcbyQauovbdotIfk5BwSouHhulGnJ3G+c7em9lzYUZwyhZlRB6VbsWxoGM2hNu0fnhqbb4RPYda/wtiQ0LhBHrfjLMbv0/XVFcuqOSBLGgVkQx7UZslURj1DYK3UBO1DZDYchjktiT3/LahkZBuq9Ul1ETt/4ZhOQ5UB+MLZ8R2cll5pwrp8vgKfGUtlH5qJmEAAAAASUVORK5CYII=" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            provide data set and algorithms
+          </p>
+        </div>
+        <!-- card 8 -->
+        <div
+          class="bg-white p-6 rounded-[16px] dark:bg-[#FFFFFF1A] dark:text-white"
+        >
+          <div
+            class="w-[70px] h-[70px] bg-[#94C24629] flex items-center justify-center rounded-full"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPjSURBVHgBrVddUhpBEO6eXcgruQE5QfA5VQoVJXlTTxB9jkY4gXgCyojPwgniY6JJsWLlWTiBe4OQxwC7ne7ZnWUXFhZIukprdqZ/vunp+XpASJHPvb0jBfABAMvBDDk+QOfT9n0bVpB17HF2otV7d8MGR+muqX2yfX8MS2RdexX/uH6snieNyQn+IrxHVw/VBiyQTeyjDDS75ULOyj/zsAAE7thXlXrlqxusvS/mLP9JrwEMx97oVb3iDOOONrWPMmDbdilUYFh4aYxFZEwEl+FnwQatm5BN7SMARFg0Yx/84WwAQnKjD0sV5tY3tI8AWN64P51UO7MOEnPefIBN7RO3oPVQfeaZol5AaIwmI502PlsuLqgFWwH3ZOfuFaTIJvaJW0C+H10RPrMGG/6Sv8hY5hHqsEA2sU8AOK18Z8LwRWH+DAmGCHR8un13CwtkE3tMcyTXxrK8sgWgz80DGnjepB2/enLtbCtflvHEG/V5zV3HfimAZcKB+U7nbqY0G7lqj70/F3Egq8gcgKvH3TKS2udiOQgLymXi2BL0QfB8l+eKC/yJbkVAJHQJ+lyV/TSAKrazQqtXbXJwMaqZahYHJtU568X5NDg3GI+O9ZlzZRvdIDtMTJZVinQRSkLRwpTcK5oSK5EBTaM2oyWIGEqKRiE4PsHgdOeuEe7oOVicv4qt3l7XHAtn4aVkTHiffbwm8YuxrHFGxr7O1NAOdsb31ARn53KdpKLjAcIdhbDxEmZE2i2nsxzo6ozdCnCzrls04bkGwhkJs1lXsjOIkYQ0kdng88HmmVABFZbZyFtAfE+Pi2pX3d2yCpEEjpEu4k0kLhPPc6bB5LExB+Fsqqv6aT50U4qRFSg8wNZj9UmnfwnFGomfM4vLmeCjwGHy9YP86PiW8WipCjsWuABdO1Z4A8iQsWcd55TfDQuqyA2mmVDQR4gXWX4IwOHgB6R9hGfCH/0sQ0mhnCNXdSfFrRN/hGQgGBjAKLRpw7h0WvlxC2uIsZPxBDwnjWaXyVX37YHYrU3FRq5/7pU8D0ooNWCR+/HNfWYG02QtAEJYeTt/xuRUQ/P8morLb4A2vwE66/SDlQE0u3tMHvgFFveBCIjpB/C/AAhZMbs9mV0LTfP/DvlB4aLCMkrrndLtMGxgbpZvG1aQsKuZ4J2JP6rNFF1bvw9UroGIQkiFnMpLtrayfGdmIPiZhbrDkfD79t3hMv04WbH+4bIXlIiCTIS4b8ZMsfUsfSGryJbgKEt/BQBBhxOiWYVktA6GpIawk6WfCQDMdSP8DSsKF+cgYfsvAIjoUqqen9NtWFH4V5BjbLN0/wLk3Dq4GgRcagAAAABJRU5ErkJggg==" alt="" />
+          </div>
+          <p class="font-normal text-base leading-6 pt-2">
+            work jointly on industry and public funded projects
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="container px-6 md:px-12 xl:px-20 mt-20 mb-10">
+      <h1 class="text-[#217dc1] font-bold text-[32px] leading-[48px]">
+        Contact <span class="text-[#1f1f1f] dark:text-white">Us !!</span>
+      </h1>
+      <div
+        class="bg-white dark:bg-[#FFFFFF1A] rounded-[20px] px-6 py-10 border dark:border-[#7A7D96] mt-3"
+      >
+        <div
+          class="flex items-center justify-between gap-8 flex-col md:flex-row"
+        >
+          <!-- left -->
+          <div class="w-full md:w-1/2">
+            <form>
+              <label
+                class="font-normal text-lg px-6 leading-[27px] text-[#1f1f1f] dark:text-white"
+                for="name"
+                >Your Name (required)</label
+              >
+              <input
+                class="block bg-[#f7f7f7] dark:bg-[#FFFFFF1A] dark:text-white w-full px-6 py-3 my-4 outline-none border-none [#525252] rounded-[30px]"
+                type="text"
+                placeholder="Shams Samir Hassan"
+                required
+                name="name"
+                id="name"
+              />
+              <label
+                class="font-normal text-lg px-6 leading-[27px] text-[#1f1f1f] dark:text-white"
+                for="email"
+                >Your Email (required)</label
+              >
+              <input
+                class="block bg-[#f7f7f7] dark:bg-[#FFFFFF1A] dark:text-white w-full px-6 py-3 my-4 outline-none border-none [#525252] rounded-[30px]"
+                type="email"
+                placeholder="sameerrsham*******@gmail.com"
+                required
+                name="email"
+                id="email"
+              />
+              <label
+                class="font-normal text-lg px-6 leading-[27px] text-[#1f1f1f] dark:text-white"
+                for="message"
+                >Your Mesage</label
+              >
+              <textarea
+                class="block bg-[#f7f7f7] dark:bg-[#FFFFFF1A] dark:text-white w-full h-48 px-6 py-3 my-4 mb-6 outline-none border-none text-[#525252] rounded-[30px]"
+                type="email"
+                placeholder="type your message here..."
+                required
+                name="message"
+                id="message"
+              ></textarea>
+              <button
+                class="w-full mt-4 pl-5 pr-2 py-2 rounded-full text-white bg-[#217dc1] flex items-center justify-between text-center font-medium text-lg leading-[27px]"
+                type="submit"
+              >
+                <div></div>
+                Send Message
+                <div
+                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#FFFFFF3D]"
+                >
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVHgBrZLRDYAgDESLcQBGYARHkI1YwQkcQVdwAldwAxjBDWoJJhIiSYu+pOWj9Og1ADBBxAFaoWaHCU9h8lrH1ND3aSj2UoQ7xYoP/i8RrWKimmRBc3Z/igIekrcWDu4Sa5w9JSucILewgQSyu5RL/NJsJM2u1iz9iYHCKqUCSKFXxzfPF4grhoSAtmr1AAAAAElFTkSuQmCC" alt="Right Arrow" />
+                </div>
+              </button>
+            </form>
+          </div>
+          <!-- right -->
+          <div
+            class="w-full md:w-1/2 bg-[#217dc1] h-[500px] rounded-[22px] pt-36 flex items-center justify-center"
+          >
+            <img src="/assets/contactsection-CPS-htQM.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-32 pt-60 px-6 md:px-12 xl:px-20">
+      <div
+        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+      >
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
+            Contact information
+          </h4>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADpSURBVHgBrZSBDYIwEEWvhAHcQEbADRiBEXAS2UA3ACfBDdAJYAN0gvovHKYpUmnlJT+lpX2US1MioLVOkAYZtD8dciJBsQxtg3B7Q3ryI5O1tVLqyLur5EsZBYK1l8kRoZ8jT0kog7Q5GbXg+qXkCdfPcFSTsBWhl9SQtbawYpGP1JLtZkKZtEpqy2RsLlwj/SZzCl3SJdlPoSVlOuN5JjOFMS2AU3/HhAMeS2RP4zl9YLwkB7HrJRb3aAryIKKNYSH/SkJ/oMcLhnlxp5GCZhQI1p7FkW9xfaWSK2pefLaM1Dr8gi0n+xsxqu1tcn9ADgAAAABJRU5ErkJggg==" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              info@Mcs-Datalabs.com
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFCSURBVHgBjVQBccMwDFSCwBDCYIHgIVghhMHGoB2DMsgYuEMQCGkRJEOQMPCk+b2qrhtXd391rffn61dKlCnvvWX0jMlfa2Q4xi53pkoEGv7oGZaxMk6MH7RfGC1DODPjtaqqOeeiZSzAB8NQ3m0Hp8udO3GC5gRXm6X4ItbqhtMi4qYkCDERGuKGxWV2CWGhsrMOZy0hnUU1Dyqp3RNi8tC+ppDEWfVWtTZUrm+GrUGeVeMLYjH+UgmvqdNdng1pfOIBe3q2MLFDZj/eVY8AGnD3OlEkPsriiAszG2IenFhHxfm7bB3/4YFjmfhBiUxq3t7/41c/b6TtKzAQNfge581pwo3dUkFw0u4kNYv+6sPLOsQLfuBKkozhXP8BcEjXmKwdOHrf+SScyofoLxSm+yRzBDfyerxRmCeD/gWcc+r2F0yy25iVgDDMAAAAAElFTkSuQmCC" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              +49 160 913 70 729
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] flex-shrink-0 rounded-full flex items-center justify-center"
+            >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAENSURBVHgBlVMBEYMwDCwoqINVAhKQgAQcDAfgYHOAFHCwOQAH4KBLb9/tKS1juculbfKfJ6WZSpi11khwrrIsG9UvE4AWb8UXu7cehPFO4hOAnS8EYU25KgZ2yQezg1DTvgNBwcAWYN/tGkjvPYnEwXnYtSYi66WT5AH5EvnSbQpsCiJqIvN4A6gml7XGdTzpekYGS26WMCOnsNY5Fo7tImGFm7AzzlYcaU4uXqrEezA8jYFNsU/wVzBR8YCCCcRM9iFSBFh4UJiqm3RF1+S71ir4rgYERiUMCvpUctj8ANtcy/JjBSaUT+d7uRGCnfxDuUfy7feJmrNgL/8GuY36xyDfpgZ4hqC09J5DewFbqNx8qHc6TQAAAABJRU5ErkJggg==" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              WilmersdorferStr. 50 10627 Berlin, Germany
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
+        >
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >DECIDE</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >EMYNOS</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >ONCORELIEF</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REFLOW</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >RELEVIUM</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REPEAT</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >SmarKo Health®</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >STAMINA</a
+            >
+          </div>
+        </div>
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">
+            News and Events
+          </h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >News</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >Release</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script files links -->
+    <script src="script.js"></script>
+  </body>
+</html>
