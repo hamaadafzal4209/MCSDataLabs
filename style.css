@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -9,16 +13,20 @@
   margin-right: auto;
 }
 
-.logo {
-  width: 110.09px;
-  height: 60px;
+.service-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
 }
 
-.service-card-container,
 .news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
+}
+
+.newsCard {
+  transition: all 0.3 ease-in-out;
 }
 
 .newsCard:hover {
@@ -118,7 +126,7 @@
   height: 20px;
 }
 
-.rolesContainer{
+.rolesContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
@@ -134,7 +142,7 @@ footer {
 
 /* about page */
 
-.hero{
+.hero {
   background: url('images/hero.png');
   width: 100%;
   /* min-height: 400px; */
@@ -143,10 +151,70 @@ footer {
   background-repeat: no-repeat;
 }
 
-.about-banner{
+.about-banner {
   background: url('images/about-banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1000px;
   width: 100%;
+}
+
+@media (max-width : 1250px) {
+  .navBar {
+    position: absolute;
+    top: 100px;
+    background: #E9ECEF;
+    z-index: 1000;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav form {
+    max-width: 300px !important;
+    width: 100% !important;
+    margin-block: 16px;
+  }
+
+  nav form input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width : 850px) {
+  br {
+    display: none;
+  }
+
+  .navBar {
+    padding: 20px 40px;
+  }
+
+  nav form {
+    max-width: 300px !important;
+    width: 100% !important;
+  }
+
+  nav form input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width : 650px) {
+  .navBar {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width : 440px) {
+  nav form {
+    width: 100% !important;
+  }
+
+  nav form input {
+    width: 100% !important;
+  }
 }
