@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <!-- boxicon cdn -->
@@ -10,9 +11,10 @@
     <!-- remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body class="bg-[#fafafc] dark:bg-[#02051E]">
-     <!-- navbar -->
-     <nav class="container px-6 md:px-12 xl:px-20 flex items-center justify-between h-[100px]">
+    <!-- navbar -->
+    <nav class="container px-6 md:px-12 xl:px-20 flex items-center justify-between h-[100px]">
         <div class="logo">
             <img src="images/logo.png" alt="" />
         </div>
@@ -55,7 +57,8 @@
                 <div class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center">
                     <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
                 </div>
-                <div onclick="toggleDarkMode()" class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center">
+                <div onclick="toggleDarkMode()"
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center">
                     <i class="bx bxs-sun text-[#A9A9A9] text-lg"></i>
                 </div>
             </div>
@@ -64,11 +67,132 @@
 
     <!-- hero section -->
 
-    <div class="hero">
+    <div class="hero text-white mb-28">
+        <div class="container relative px-6 md:px-12 xl:px-20">
+            <div
+                class="flex items-start justify-center text-center font-bold text-[40px] leading-[60px] text-balance pt-10">
+                <span>a Berlin-based Small and Medium-sized Enterprise (SME) founded in
+                    2013</span>
+            </div>
 
+            <!-- banner -->
+            <div class="about-banner mx-auto my-10 rounded-[20px]">
+                <div
+                    class="px-10 py-10 lg:py-4 flex items-center justify-center md:justify-between gap-8 flex-col md:flex-row">
+                    <!-- left -->
+                    <div class="w-full md:w-[60%] font-bold text-lg leading-[27px] text-justify">
+                        <p>MCS in Brief: <br>
+                            MCS Data Labs, a Berlin-based Small and Medium-sized Enterprise (SME) founded in 2013,
+                            stands at the forefront of technological innovation, extending far beyond the realm of smart
+                            wearable sensor devices. While the company has established a strong foothold in the
+                            development of advanced wearable technology, its expertise is not confined to this area
+                            alone. MCS Data Labs excels in creating a holistic ecosystem encompassing robust backend
+                            infrastructures and sophisticated mobile applications, integral to the functionality and
+                            effectiveness of their wearables.</p>
+                    </div>
+                    <!-- right -->
+                    <div class="w-full md:w-2/5 mx-auto flex items-center justify-center">
+                        <img src="images/watch.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="mx-auto max-w-[1200px] mb-20 w-full px-6 md:px-12 xl:px-20">
+        <div class="flex items-start justify-between gap-8 flex-col md:flex-row">
+            <!-- left -->
+            <div class="w-full md:w-[472px] h-[530px] p-8" style="background-image: url('images/about-bg.png');">
+                <h1 class="font-bold text-[32px] leading-[48px] text-white">MCS Data Labs is not just about wearable technology</h1>
+                <div class="mt-6 w-full h-full">
+                    <img src="images/settalite.png" alt="">
+                </div>
+            </div>
+            <!-- right -->
+            <div class="w-full md:w-[60%]">
+                <p class="font-medium text-base leading-[27px] text-justify dark:text-white">
+                    As a research-focused entity, MCS specializes in a range of solutions pivotal to the Internet of
+                    Things (IoT), Artificial Intelligence (AI), and Big Data domains. Their expertise is not limited to
+                    the digital health sector, as they also venture into areas like cybersecurity and smart cities,
+                    showcasing their versatile technological prowess.
+                    The company’s capabilities in handling streaming data and real-time processing of big data are
+                    central to their innovative approach. This approach is not just about the wearables themselves but
+                    encompasses the entire data collection and analysis platform. Their proprietary wearable sensor
+                    devices and software applications work in tandem, monitoring health conditions and integrating
+                    environmental and motion data to establish a comprehensive AI-knowledge base and generate novel
+                    research hypotheses.
+                    MCS’s Department of Digital Health boasts a team of specialists from various fields, including
+                    general internal medicine, endocrinology, diabetes, laboratory investigations, and knowledge
+                    engineering. This diverse expertise reinforces their ability to develop not just wearables but also
+                    complete ecosystems including clinical decision support systems, cancer treatment methodologies,
+                    knowledge engineering, and domain modeling in healthcare.
+                </p>
+            </div>
+        </div>
+        <div class="">
+            <p class="font-medium text-base leading-[27px] text-justify dark:text-white mt-6 mb-20">
+                In essence, MCS Data Labs is not just about wearable technology; it represents a comprehensive technological ecosystem, integrating advanced wearables, sophisticated backend systems, and user-centric mobile applications. This holistic approach positions them as a key player in driving research and development, leveraging AI, Big Data, and wearable technology to revolutionize healthcare outcomes and expand the frontiers of medical knowledge.
+            </p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-32 pt-60 px-6 md:px-12 xl:px-20">
+        <div class="container flex items-start justify-center flex-wrap text-white text-left gap-6">
+            <div class="w-[300px] mx-auto">
+                <h4 class="pb-14 font-bold text-[32px] leading-[48px]">Contact information</h4>
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center">
+                        <i class='bx bx-envelope text-lg'></i>
+                    </div>
+                    <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">info@Mcs-Datalabs.com</p>
+                </div>
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center">
+                        <img src="images/wattsapp.png" alt="">
+                    </div>
+                    <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">+49 160 913 70 729</p>
+                </div>
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center">
+                        <i class="ri-map-pin-line text-lg"></i>
+                    </div>
+                    <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">WilmersdorferStr. 50 10627
+                        Berlin, Germany</p>
+                </div>
+            </div>
+            <div class="mt-6">
+                <img src="images/divider.png" alt="">
+            </div>
+            <div class="w-[300px] pl-24">
+                <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">DECIDE</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">EMYNOS</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">ONCORELIEF</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">REFLOW</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">RELEVIUM</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">REPEAT</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">SmarKo Health®</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">STAMINA</a>
+                </div>
+            </div>
+            <div class="mt-6">
+                <img src="images/divider.png" alt="">
+            </div>
+            <div class="w-[300px] mx-auto">
+                <h4 class="pb-6 font-bold text-[32px] leading-[48px]">News and Events</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">News</a>
+                    <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]">Release</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
     <!-- script tag links -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
