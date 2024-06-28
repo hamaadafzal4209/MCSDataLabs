@@ -6,6 +6,8 @@
         const goalsLogo = document.getElementById('goalsLogo');
         const headLineLeft = document.getElementById('head-line-left');
         const headLineRight = document.getElementById('head-line-right');
+        const useCaseIamge = document.getElementById('use-case-iamge');
+        const headLineLleftImg = document.getElementById('head-line-left-img');
 
         // Toggle image source based on dark mode
         if (isDarkMode) {
@@ -16,6 +18,8 @@
                 headLineRight.src = 'images/head-line-white.png';
                 headLineRight.classList.add('rotate-180');
             }
+            if(useCaseIamge) useCaseIamge.src = 'images/darkMode-usecase.png'
+            if(headLineLleftImg) headLineLleftImg.src = 'images/head-line-white.png'
         } else {
             if (teamMapImg) teamMapImg.src = 'images/team-map.png';
             if (goalsLogo) goalsLogo.src = 'images/goals-logo.png';
@@ -24,6 +28,7 @@
                 headLineRight.src = 'images/head-line-right.png';
                 headLineRight.classList.remove('rotate-180');
             }
+            if(useCaseIamge) useCaseIamge.src = 'images/usecases.png'
         }
 
         // Save dark mode preference in localStorage
