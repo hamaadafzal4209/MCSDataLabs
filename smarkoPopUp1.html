@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <!-- boxicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#fafafc] dark:bg-[#02051E]">
+    <!-- navbar -->
+    <nav
+      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    >
+      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+        <img src="images/logo.png" class="w-full h-full" alt="" />
+      </div>
+      <div
+        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
+      >
+        <ul class="xl:flex mr-auto items-center gap-4">
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#94c246]" href="/smarko.html"
+              >SmarKo Health®</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#project">Project</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- right nav section -->
+        <div class="xl:flex items-center gap-4">
+          <!-- search input -->
+          <form
+            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+          >
+            <i class="ri-search-line text-[#A9A9A9]"></i>
+            <input
+              type="search"
+              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+              placeholder="Search"
+            />
+          </form>
+          <!-- social icons -->
+          <div class="flex items-center gap-3">
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+            >
+              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu icon -->
+      <div class="menu-icon cursor-pointer block xl:hidden">
+        <img src="images/menu-icon.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="text-white popup-hero-section pt-12">
+      <div class="container px-6 md:px-12 xl:px-20">
+        <div
+          class="flex items-center justify-center flex-col gap-4 text-center font-bold text-[40px] leading-[60px] text-balance pt-10 bg-[#040621]"
+        >
+          <div class="max-w-6xl w-full mx-auto px-6 md:px-12 xl:px-20 mb-10">
+            <div class="relative">
+              <h2 class="mx-auto heading text-center pt-12 md:pt-0">
+                Block diagram for
+                <span class="bg-[#217DC1]">smartwatch,</span>
+                <br />
+                Sport watch and wristband
+              </h2>
+              <div
+                class="absolute right-0 -top-4 md:top-0 h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center cursor-pointer"
+              >
+                <i class="bx bx-x text-[#A9A9A9] text-5xl font-bold"></i>
+              </div>
+            </div>
+            <div class="mt-10 sm:mt-20">
+              <img src="images/smarko-popup-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- solution section -->
+
+    <div class="px-6 md:px-12 xl:px-20">
+      <div
+        class="max-w-[900px] w-full rounded-[16px] mb-20 mx-auto bg-[#217dc1]"
+      >
+        <div class="flex items-center justify-between flex-col md:flex-row">
+          <div class="w-full md:w-[60%] px-4 py-6 xs:p-8">
+            <h1 class="font-bold text-[26px] leading-[39px] text-white">
+              MCS Creates Solutions Tailored To Your Specific Needs
+            </h1>
+            <a
+              href=""
+              class="learnMoreBtn my-6 inline-block truncate line-clamp-1"
+            >
+              Click here to learn more ...
+              <div class="flex-shrink-0">
+                <img src="images/right-arrow-white.png" alt="Right Arrow" />
+              </div>
+            </a>
+          </div>
+          <div class="-mt-6 -mb-6 -mx-12 md:mx-0 w-full md:w-[40%]">
+            <img src="images/smarko-watah.png" class="w-full" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-6 md:px-12 xl:px-20">
+      <div class="smarkoSolution">
+        <!-- left section -->
+        <div
+          class="w-full bg-[#94C246] rounded-[16px] flex items-center justify-center flex-col"
+        >
+          <h2
+            class="font-bold text-[32px] leading-[48px] text-center text-white pt-8 px-4"
+          >
+            MCS Creates Solutions Tailored To Your Specific Needs
+          </h2>
+          <div class="">
+            <a
+              href=""
+              class="learnMoreBtn my-6 inline-block truncate line-clamp-1"
+            >
+              Click here to learn more ...
+              <div class="flex-shrink-0">
+                <img src="images/right-arrow-white.png" alt="Right Arrow" />
+              </div>
+            </a>
+          </div>
+          <div class="w-full">
+            <img src="images/mobile.png" class="w-full object-cover" alt="" />
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="w-full">
+          <div class="smarkoCardsContainer">
+            <!-- card 1 -->
+            <div class="p-4 rounded-[16px] bg-white shadow dark:bg-[#FFFFFF1A]">
+              <div class="flex items-center gap-4">
+                <img src="images/smarko-card-1.png" alt="" />
+                <p
+                  class="font-medium text-base dark:text-white leading-[27px] text-justify"
+                >
+                  Custom Firmware And Software Updates
+                </p>
+              </div>
+              <div
+                class="font-light text-sm leading-[27px] text-[#1f1f1f] dark:text-[#E4E6EB] text-justify pt-4"
+              >
+                <p class="">
+                  Option for users to select and apply updates based on their
+                  specific needs and usage patterns.
+                </p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="p-4 rounded-[16px] bg-white shadow dark:bg-[#FFFFFF1A]">
+              <div class="flex items-center gap-4">
+                <img src="images/smarko-card-2.png" alt="" />
+                <p
+                  class="font-medium text-base dark:text-white leading-[27px] text-justify"
+                >
+                  Personalized App Interface
+                </p>
+              </div>
+              <div
+                class="font-light text-sm leading-[27px] text-[#1f1f1f] dark:text-[#E4E6EB] text-justify pt-4"
+              >
+                <p class="">
+                  customizable dashboards to highlight preferred data
+                  points.Option to set personalized alerts and notifications
+                  based on user-defined thresholds..
+                </p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="p-4 rounded-[16px] bg-white shadow dark:bg-[#FFFFFF1A]">
+              <div class="flex items-center gap-4">
+                <img src="images/smarko-card-3.png" alt="" />
+                <p
+                  class="font-medium text-base dark:text-white leading-[27px] text-justify"
+                >
+                  Flexible Integration With Third-Party Devices And Systems
+                </p>
+              </div>
+              <div
+                class="font-light text-sm leading-[27px] text-[#1f1f1f] dark:text-[#E4E6EB] text-justify pt-4"
+              >
+                <p class="">
+                  Option for users to select and apply updates based on their
+                  specific needs and usage patterns.
+                </p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="p-4 rounded-[16px] bg-white shadow dark:bg-[#FFFFFF1A]">
+              <div class="flex items-center gap-4">
+                <img src="images/smarko-card-4.png" alt="" />
+                <p
+                  class="font-medium text-base dark:text-white leading-[27px] text-justify"
+                >
+                  Adaptable Data Analyticas
+                </p>
+              </div>
+              <div
+                class="font-light text-sm leading-[27px] text-[#1f1f1f] dark:text-[#E4E6EB] text-justify pt-4"
+              >
+                <p class="">
+                  Tools for custom data analysis, allowing users to focus on
+                  specific datasets. Tailorable reporting formats to suit
+                  different analysis needs.
+                </p>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="p-4 rounded-[16px] bg-white shadow dark:bg-[#FFFFFF1A]">
+              <div class="flex items-center gap-4">
+                <img src="images/smarko-card-5.png" alt="" />
+                <p
+                  class="font-medium text-base dark:text-white leading-[27px] text-justify"
+                >
+                  Modular Sensor Integration (Configurable)
+                </p>
+              </div>
+              <div
+                class="font-light text-sm leading-[27px] text-[#1f1f1f] dark:text-[#E4E6EB] text-justify pt-4"
+              >
+                <p class="">
+                  Users can choose specific sensors based on their needs, from
+                  vital signs to environmental factors. Flexibility in
+                  configuring sensor settings.
+                </p>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="p-4 rounded-[16px] bg-white shadow dark:bg-[#FFFFFF1A]">
+              <div class="flex items-center gap-4">
+                <img src="images/smarko-card-6.png" alt="" />
+                <p
+                  class="font-medium text-base dark:text-white leading-[27px] text-justify"
+                >
+                  Configurable Data Storage And Privacy
+                </p>
+              </div>
+              <div
+                class="font-light text-sm leading-[27px] text-[#1f1f1f] dark:text-[#E4E6EB] text-justify pt-4"
+              >
+                <p class="">
+                  Choice of data storage locations, adhering to data sovereignty
+                  principles. Adjustable privacy settings to control data
+                  sharing and access.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- data -->
+
+    <div class="px-6 md:px-12 xl:px-20 mt-20 dark:text-white">
+      <div class="mx-auto max-w-[1000px] w-full">
+        <div
+          class="flex items-center justify-between gap-6 flex-col md:flex-row"
+        >
+          <!-- left section -->
+          <div class="w-full md:w-1/2 flex flex-col items-start">
+            <h1
+              class="text-[#1F1F1F] dark:text-white font-bold text-[32px] leading-[48px]"
+            >
+              Get Control Over Your Data With
+              <span class="bg-[#217dc1] text-white"
+                >MCS White Box Approach</span
+              >
+            </h1>
+            <p
+              class="font-medium text-balance leading-6 text-justify pt-4 text-[#1F1F1F] dark:text-white"
+            >
+              we offer complete transparency and access to vital health signals
+              through our ecosystem. the commitment to customization allows us
+              to tailor solutions to unique needs, ensuring innovation remains
+              at the core of everything we offer.
+            </p>
+          </div>
+          <!-- right section -->
+          <div
+            class="w-full md:w-1/2 flex items-start justify-center gap-4 xs:gap-8"
+          >
+            <div class="flex items-center justify-center flex-col gap-6">
+              <div
+                class="w-[140px] h-[140px] flex items-center justify-center font-bold text-[22px] leading-[33px] text-[#217DC1]"
+                style="background-image: url(images/blue-circle.png)"
+              >
+                100%
+              </div>
+              <div class="">
+                <h2 class="font-bold text-[20px] leading-[30px]">
+                  WHITE BOX <br />
+                  APPROACH
+                </h2>
+              </div>
+            </div>
+            <div class="flex items-center justify-center flex-col gap-6">
+              <div
+                class="w-[140px] h-[140px] flex items-center justify-center font-bold text-[22px] leading-[33px] text-[#94C246]"
+                style="background-image: url(images/green-circle.png)"
+              >
+                100%
+              </div>
+              <div class="">
+                <h2 class="font-bold text-[20px] leading-[30px]">
+                  CUSTOMIZATION
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container flex flex-col items-center justify-center px-6 md:px-12 xl:px-20 mt-10 md:mt-20 mb-10 dark:text-white"
+    >
+      <div
+        class="flex items-center justify-center gap-2 sm:gap-4 flex-col lg:flex-row"
+      >
+        <img id="head-line-left-2" src="images/head-line.png" alt="" />
+        <h2
+          class="font-bold text-[32px] leading-[48px] flex items-center gap-2"
+        >
+          Deep Tech Award <img src="images/award.png" alt="" />
+        </h2>
+        <img id="head-line-right-2" src="images/head-line-right.png" alt="" />
+      </div>
+      <div class="max-w-[750px] mx-auto">
+        <p class="font-medium text-lg leading-[27px] text-justify pt-4">
+          SmarKo Health® has received the Deep Tech Award (2nd prize). The
+          award, jointly sponsored by the European Fund for Regional Development
+          (EFRE) and the Senate of the State of Berlin (Germany), promotes the
+          development of breakthrough technologies.Read more…
+        </p>
+      </div>
+    </div>
+
+    <!-- ecosystem -->
+
+    <div class="container px-6 md:px-12 xl:px-20 mt-20 mb-10 dark:text-white">
+      <div
+        class="bg-white dark:bg-[#FFFFFF1A] flex items-center justify-between gap-6 flex-col lg:flex-row p-6 rounded-[20px]"
+      >
+        <!-- left section -->
+        <div class="w-full lg:w-1/2 lg:px-12">
+          <h2 class="font-bold text-[32px] leading-[48px]">Smarko ecosystem</h2>
+          <p class="font-normal text-lg leading-[27px]">
+            sensor, connectivity, power, memory and security
+          </p>
+          <div
+            class="flex items-start flex-col sm:flex-row sm:gap-8 mt-4 md:mt-16"
+          >
+            <!-- left  column -->
+            <div class="">
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/connectivity.png" alt="" />
+                  </div>
+                  <div class="">
+                    <img src="images/vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  connectivity
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/interface.png" alt="" />
+                  </div>
+                  <div class="">
+                    <img src="images/vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  interface
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/memory.png" alt="" />
+                  </div>
+                  <div class="">
+                    <img src="images/vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  memory
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/charging.png" alt="" />
+                  </div>
+                  <div class="block sm:hidden">
+                    <img src="images/vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  charging
+                </p>
+              </div>
+            </div>
+            <!-- right column -->
+            <div class="">
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/processing.png" alt="" />
+                  </div>
+                  <div class="">
+                    <img src="images/vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  processing
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/sensing.png" alt="" />
+                  </div>
+                  <div class="">
+                    <img src="images/vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  sensing
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+                  >
+                    <img src="images/security.png" alt="" />
+                  </div>
+                  <div class="">
+                    <img src="images/long-vertical-line.png" alt="" />
+                  </div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2">
+                  security
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="flex items-center justify-center flex-col">
+                  <div
+                    class="h-[22px] w-[22px] ml-[14px] bg-white rounded-full flex items-center justify-center"
+                  ></div>
+                </div>
+                <p class="font-normal text-[20px] leading-[30px] pt-2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="w-full lg:w-1/2">
+          <img src="images/ecosystem.png" class="w-full object-cover" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- blog 1 -->
+    <div class="container px-6 md:px-12 xl:px-20 my-20 dark:text-white">
+      <div
+        class="flex items-center justify-between gap-6 md:gap-12 flex-col-reverse md:flex-row"
+      >
+        <!-- left section -->
+        <div class="w-full md:w-1/2">
+          <h2 class="font-bold text-[32px] leading-[48px] capitalize">
+            united nations: one health
+          </h2>
+          <p class="paragraph text-justify pt-4">
+            the one health joint plan of action launched in october 2022
+            addresses health threats to humans, animals, plants and environment.
+            it therefore may serve as a backdrop when developing a
+            product-marketing plan that targets children and adolescents as the
+            horizon call referred in here, does.
+          </p>
+        </div>
+        <!-- right section -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="images/smarko-blog-1.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- blog 2 -->
+    <div class="container px-6 md:px-12 xl:px-20 my-20 dark:text-white">
+      <div
+        class="flex items-center justify-between gap-6 md:gap-12 flex-col md:flex-row"
+      >
+        <!-- left section -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="images/smarko-blog-2.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+        <!-- right section -->
+        <div class="w-full md:w-1/2 space-y-4">
+          <h2 class="font-bold text-[32px] leading-[48px] capitalize">
+            Block diagram for smartwatch, Sport watch and wristband
+          </h2>
+          <p class="paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. 
+          </p>
+          <div class="">
+            <img src="images/learnmore-dark-btn.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- blog 3 -->
+    <div class="container px-6 md:px-12 xl:px-20 my-20 dark:text-white">
+      <div
+        class="flex items-center justify-between gap-6 md:gap-12 flex-col-reverse md:flex-row"
+      >
+        <!-- left section -->
+        <div class="w-full md:w-1/2 space-y-4">
+          <h2 class="font-bold text-[32px] leading-[48px] capitalize">
+            Main Use Cases for wrist-Worn devices
+          </h2>
+          <p class="paragraph">
+            Main Use Cases for smartwaches, Sports watches and wristbands. 
+          </p>
+          <p class="paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. . 
+          </p>
+          <div class="">
+            <img src="images/learnmore-dark-btn.png" alt="" />
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="images/smarko-blog-3.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- youngsters section -->
+
+    <div class="container px-6 md:px-12 xl:px-20">
+      <div
+        class="bg-top md:bg-center"
+        style="background-image: url('images/youngsters.png')"
+      >
+        <div
+          class="flex items-center justify-between gap-4 md:gap-8 flex-col md:flex-row py-12 px-4 md:px-8"
+        >
+          <!-- left section -->
+          <div class="w-full md:w-1/2">
+            <div class="space-y-4">
+              <div
+                class="flex items-center gap-3 bg-white text-black p-4 cardShadow transition duration-200"
+              >
+                <div
+                  class="w-[50px] h-[50px] font-bold text-[20px] leading-[30] bg-[#D9D9D9] rounded-full flex items-center justify-center"
+                >
+                  01
+                </div>
+                <p class="paragraph">my friends</p>
+              </div>
+              <div
+                class="flex items-center gap-3 bg-white text-black p-4 cardShadow transition duration-200"
+              >
+                <div
+                  class="w-[50px] h-[50px] font-bold text-[20px] leading-[30] bg-[#D9D9D9] rounded-full flex items-center justify-center"
+                >
+                  02
+                </div>
+                <p class="paragraph">my family</p>
+              </div>
+              <div
+                class="flex items-center gap-3 bg-white text-black p-4 cardShadow transition duration-200"
+              >
+                <div
+                  class="w-[50px] h-[50px] font-bold text-[20px] leading-[30] bg-[#D9D9D9] rounded-full flex items-center justify-center"
+                >
+                  03
+                </div>
+                <p class="paragraph">Problems i see</p>
+              </div>
+              <div
+                class="flex items-center gap-3 bg-white text-black p-4 cardShadow transition duration-200"
+              >
+                <div
+                  class="w-[50px] h-[50px] font-bold text-[20px] leading-[30] bg-[#D9D9D9] rounded-full flex items-center justify-center"
+                >
+                  04
+                </div>
+                <p class="paragraph">idea i like</p>
+              </div>
+              <div
+                class="flex items-center gap-3 bg-white text-black p-4 cardShadow transition duration-200"
+              >
+                <div
+                  class="w-[50px] h-[50px] font-bold text-[20px] leading-[30] bg-[#D9D9D9] rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  05
+                </div>
+                <p class="paragraph">the people and nations around the globe</p>
+              </div>
+              <div
+                class="flex items-center gap-3 bg-white text-black p-4 cardShadow transition duration-200"
+              >
+                <div
+                  class="w-[50px] h-[50px] font-bold text-[20px] leading-[30] bg-[#D9D9D9] rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  06
+                </div>
+                <p class="paragraph">
+                  how i can make a difference in this world
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- right section -->
+          <div class="w-full md:w-1/2">
+            <h2 class="heading capitalize">
+              what does one world mean to youngsters?
+            </h2>
+            <p class="paragraph">my big, smart smarko world</p>
+            <p class="paragraph pt-4 md:pt-12 text-justify">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- health technology -->
+
+    <div
+      class="container mx-auto px-6 md:px-12 xl:px-20 dark:text-white text-center my-10 md:my-20"
+    >
+      <h1 class="heading capitalize">
+        from technology to one health to one world
+      </h1>
+      <p class="paragraph py-4">
+        presenting the whole context of smarko for children and adolescents
+      </p>
+      <div class="flex items-center justify-center my-10">
+        <div class="flex items-center flex-col lg:flex-row">
+          <div class="flex items-center flex-col lg:flex-row">
+            <i class="bx bxs-circle text-[#FFFFFF1A] dark:text-white"></i>
+            <img
+              src="images/horizontal-line.png"
+              class="hidden lg:block"
+              alt=""
+            />
+            <img
+              src="images/vertical-line-tech.png"
+              class="block lg:hidden"
+              alt=""
+            />
+          </div>
+          <div
+            class="border-[2px] border-dashed border-[#FFFFFF1A] dark:border-[#ffffff] w-[200px] h-[150px] p-6 rounded-lg flex flex-col items-center justify-center text-center"
+          >
+            <img
+              src="images/techHealth-1.png"
+              alt="Technology"
+              class="w-12 h-12 mb-4"
+            />
+            <p class="dark:text-white">technology</p>
+          </div>
+          <div class="my-2 lg:mx-2">
+            <div class="hidden lg:block">
+              <i
+                class="bx bxs-chevrons-right text-[#FFFFFF1A] dark:text-white text-3xl hidden lg:block"
+              ></i>
+            </div>
+            <div class="block lg:hidden">
+              <i
+                class="bx bxs-chevrons-down text-[#FFFFFF1A] dark:text-white text-3xl"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="border-[2px] border-dashed border-[#FFFFFF1A] dark:border-[#ffffff] w-[200px] h-[150px] p-6 rounded-lg flex flex-col items-center justify-center text-center"
+          >
+            <img
+              src="images/techHealth-2.png"
+              alt="One Health"
+              class="w-12 h-12 mb-4"
+            />
+            <p class="dark:text-white">one health</p>
+          </div>
+          <div class="my-2 lg:mx-2">
+            <div class="hidden lg:block">
+              <i
+                class="bx bxs-chevrons-right text-[#FFFFFF1A] dark:text-white text-3xl hidden lg:block"
+              ></i>
+            </div>
+            <div class="block lg:hidden">
+              <i
+                class="bx bxs-chevrons-down text-[#FFFFFF1A] dark:text-white text-3xl"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="border-[2px] border-dashed border-[#FFFFFF1A] dark:border-[#ffffff] w-[200px] h-[150px] p-6 rounded-lg flex flex-col items-center justify-center text-center"
+          >
+            <img
+              src="images/techHealth-3.png"
+              alt="One World"
+              class="w-12 h-12 mb-4"
+            />
+            <p class="dark:text-white">one world</p>
+          </div>
+          <div class="flex items-center flex-col lg:flex-row">
+            <img
+              src="images/horizontal-line.png"
+              class="hidden lg:block"
+              alt=""
+            />
+            <img
+              src="images/vertical-line-tech.png"
+              class="block lg:hidden"
+              alt=""
+            />
+            <i class="bx bxs-circle text-[#FFFFFF1A] dark:text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- highlights -->
+
+    <div class="container px-6 md:px-12 xl:px-20 mx-auto dark:text-white">
+      <div class="flex items-center justify-between gap-8 flex-col md:flex-row">
+        <!-- left -->
+        <div class="w-full 2xl:max-w-[300px]">
+          <img src="images/highlights.png" class="w-full object-cover" alt="" />
+        </div>
+        <!-- right section -->
+        <div class="w-full">
+          <div class="flex flex-col justify-between gap-8">
+            <div class="">
+              <h2 class="heading">Highlights</h2>
+              <p class="paragraph">
+                Application brochure: Smartwatch, sports watch, wristband, and
+                medical wrist-worn devices
+              </p>
+            </div>
+            <div class="highlightsCardContainer">
+              <!-- card 1 -->
+              <div
+                class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] px-4 py-6 rounded-[20px] border-t-8 border-[#ffffff0b] hover:border-[#94C246]"
+              >
+                <img src="images/google-map.png" class="mx-auto" alt="" />
+                <h2
+                  class="font-semibold text-lg leading-[27px] py-4 text-center"
+                >
+                  Highest accuracy
+                </h2>
+                <p
+                  class="font-normal text-[f1f1f1] dark:text-[#E4E6EB] text-balance leading-6 text-center"
+                >
+                  Achieve robust and accurate altitude measurement, location
+                  tracking, precise single step or body motion detection
+                </p>
+              </div>
+              <!-- card 2 -->
+              <div
+                class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] px-4 py-6 rounded-[20px] border-t-8 border-[#ffffff0b] hover:border-[#94C246]"
+              >
+                <img
+                  src="images/security-highlight.png"
+                  class="mx-auto"
+                  alt=""
+                />
+                <h2
+                  class="font-semibold text-lg leading-[27px] py-4 text-center"
+                >
+                  Highest accuracy
+                </h2>
+                <p
+                  class="font-normal text-[f1f1f1] dark:text-[#E4E6EB] text-balance leading-6 text-center"
+                >
+                  Achieve robust and accurate altitude measurement, location
+                  tracking, precise single step or body motion detection
+                </p>
+              </div>
+              <!-- card 3 -->
+              <div
+                class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] px-4 py-6 rounded-[20px] border-t-8 border-[#ffffff0b] hover:border-[#94C246]"
+              >
+                <img src="images/battery.png" class="mx-auto" alt="" />
+                <h2
+                  class="font-semibold text-lg leading-[27px] py-4 text-center"
+                >
+                  Highest accuracy
+                </h2>
+                <p
+                  class="font-normal text-[f1f1f1] dark:text-[#E4E6EB] text-balance leading-6 text-center"
+                >
+                  Achieve robust and accurate altitude measurement, location
+                  tracking, precise single step or body motion detection
+                </p>
+              </div>
+              <!-- card 4 -->
+              <div
+                class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] px-4 py-6 rounded-[20px] border-t-8 border-[#ffffff0b] hover:border-[#94C246]"
+              >
+                <img src="images/integrate.png" class="mx-auto" alt="" />
+                <h2
+                  class="font-semibold text-lg leading-[27px] py-4 text-center"
+                >
+                  Highest accuracy
+                </h2>
+                <p
+                  class="font-normal text-[f1f1f1] dark:text-[#E4E6EB] text-balance leading-6 text-center"
+                >
+                  Achieve robust and accurate altitude measurement, location
+                  tracking, precise single step or body motion detection
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
+      <div
+        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+      >
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
+            Contact information
+          </h4>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/email.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              info@Mcs-Datalabs.com
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/wattsapp.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              +49 160 913 70 729
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] flex-shrink-0 rounded-full flex items-center justify-center"
+            >
+              <img src="images/location.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              WilmersdorferStr. 50 10627 Berlin, Germany
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
+        >
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >DECIDE</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >EMYNOS</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >ONCORELIEF</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REFLOW</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >RELEVIUM</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REPEAT</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >SmarKo Health®</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >STAMINA</a
+            >
+          </div>
+        </div>
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">
+            News and Events
+          </h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >News</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >Release</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script tag links -->
+    <script src="script.js"></script>
+  </body>
+</html>

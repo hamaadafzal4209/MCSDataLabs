@@ -237,12 +237,16 @@ footer {
   background-size: cover;
 }
 
-/* about page */
-
 .hero {
   background: url('images/hero-bg.png');
   width: 100%;
   background-size: cover;
+}
+
+.popup-hero-section{
+  background: url('images/hero-bg.png');
+  width: 100%;
+  background-size: contain;
 }
 
 .about-banner {
@@ -274,7 +278,7 @@ footer {
 
 .cardShadow:hover{
   box-shadow: 6px 44px 52px 0px #00000040;
-  border-top: 12px solid #217DC1
+  border-top: 12px solid #217DC1;
 }
 
 @media (max-width : 1250px) {
