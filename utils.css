@@ -1,0 +1,11 @@
+.paragraph {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
