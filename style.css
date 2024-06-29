@@ -227,12 +227,9 @@ footer {
 /* about page */
 
 .hero {
-  background: url('images/hero.png');
+  background: url('images/hero-bg.png');
   width: 100%;
-  /* min-height: 400px; */
-  /* height: 100%; */
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .about-banner {
@@ -241,7 +238,27 @@ footer {
   background-repeat: no-repeat;
   max-width: 1000px;
   width: 100%;
+  border-radius: 20px;
 }
+
+.about-hero-line {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.about-hero-line::after {
+  content: '';
+  background: url('images/about-hero-line.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: -5px;
+  bottom: 10px;
+  width: 319px;
+  height: 20px;
+  z-index: -1;
+}
+
 
 @media (max-width : 1250px) {
   .navBar {
