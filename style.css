@@ -21,7 +21,7 @@
 
 .news-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 
@@ -60,6 +60,90 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+}
+
+.healthyVector {
+  position: relative;
+  display: inline-block; /* Ensure the span has dimensions */
+}
+
+.healthyVector::after{
+  content: '';
+  background: url('images/healthy-vector.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  width: 155px;
+  height: 69px;
+  z-index: 1; 
+}
+
+.role-underline{
+  position: relative;
+  display: inline-block;
+}
+
+.role-underline::after{
+  content: '';
+  background: url('images/role-underline.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  bottom: 3px;
+  left: -10px;
+  width: 146px;
+  height: 17px;
+  z-index: -1; 
+}
+
+.things-vector{
+  position: relative;
+  display: inline-block;
+}
+
+.things-vector::after{
+  content: '';
+  background: url('images/thing-vector.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  width: 135px;
+  height: 69px;
+  z-index: 1; 
+}
+
+.underline-vector {
+  position: relative;
+  display: inline-block; /* Ensure the span has dimensions */
+}
+
+.underline-vector::after{
+  content: '';
+  background: url('images/blueline-vector.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 264px;
+  height: 17px;
+  z-index: -1; 
+}
+.latest-underline-vector {
+  position: relative;
+  display: inline-block; /* Ensure the span has dimensions */
+}
+
+.latest-underline-vector::after{
+  content: '';
+  background: url('images/news-underline-vector.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 170px;
+  height: 10px;
+  z-index: -1; 
 }
 
 .learnMoreBtn {
@@ -219,6 +303,6 @@ footer {
   }
   .number{
     scale: 0.6;
-    margin-right: 2px !important;
+    margin-right: 2px !important  ;
   }
 }
