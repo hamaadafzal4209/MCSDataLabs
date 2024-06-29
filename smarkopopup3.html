@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <!-- boxicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#fafafc] dark:bg-[#02051E]">
+    <!-- navbar -->
+    <nav
+      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    >
+      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+        <img src="images/logo.png" class="w-full h-full" alt="" />
+      </div>
+      <div
+        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
+      >
+        <ul class="xl:flex mr-auto items-center gap-4">
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#94c246]" href="/smarko.html"
+              >SmarKo Health®</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#project">Project</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- right nav section -->
+        <div class="xl:flex items-center gap-4">
+          <!-- search input -->
+          <form
+            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+          >
+            <i class="ri-search-line text-[#A9A9A9]"></i>
+            <input
+              type="search"
+              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+              placeholder="Search"
+            />
+          </form>
+          <!-- social icons -->
+          <div class="flex items-center gap-3">
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+            >
+              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu icon -->
+      <div class="menu-icon cursor-pointer block xl:hidden">
+        <img src="images/menu-icon.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="text-white popup-hero-section pt-12">
+        <div class="container px-6 md:px-12 xl:px-20">
+          <div
+            class="flex items-center justify-center flex-col gap-4 text-center font-bold text-[40px] leading-[60px] text-balance pt-10 bg-[#040621]"
+          >
+            <div class="max-w-6xl w-full mx-auto px-6 md:px-12 xl:px-20 mb-10">
+              <div class="relative flex items-center justify-center flex-col gap-4">
+                <h2 class="mx-auto heading text-center pt-12 md:pt-0">
+                    SmarKo Smartwatch features
+                </h2>
+                <div class="mx-auto">
+                    <img src="images/smarko-white-logo.png" alt="">
+                </div>
+                <div
+                  class="absolute right-0 -top-4 md:top-0 h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <i class="bx bx-x text-[#A9A9A9] text-5xl font-bold"></i>
+                </div>
+              </div>
+              <div class="mt-10 sm:mt-20">
+                <img src="images/smarko-popup-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container px-6 md:px-12 xl:px-20 mt-20 mb-10 md:mb-20">
+      <div class="flex flex-col space-y-4 w-full">
+        <!-- First Row -->
+        <div
+          class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+        >
+          <div class="col-3fr gradient-border p-6 rounded-lg">
+            <div class="flex items-start space-x-4">
+              <img
+                src="images/smarko2-watch.png"
+                alt="Smart Watch"
+                class="w-12 h-12"
+              />
+              <div>
+                <h2 class="text-[#217DC1] text-xl font-semibold pb-3">
+                  Smart <br />
+                  watch
+                </h2>
+                <p class="paragraph dark:text-white">
+                  A smartwatch provides a two-way connection via Bluetooth®,
+                  cellular baseband or Wi-Fi to a smartphone. It receives
+                  electronic communications like texts or voice calls, must
+                  display the time and have a glance-able display. These
+                  lifestyle devices monitor health and make communication (text,
+                  calls) more convenient.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2fr gradient-border p-6 rounded-lg">
+            <div class="flex items-start space-x-4">
+              <img
+                src="images/smarko2-watch.png"
+                alt="Sports Watch"
+                class="w-12 h-12"
+              />
+              <div>
+                <h2 class="text-[#217DC1] text-xl font-semibold pb-3">
+                  Sports <br />
+                  watch
+                </h2>
+                <p class="paragraph dark:text-white">
+                  A medical wrist-worn device measures and analyzes the physical
+                  activity and body functions of the wearer. These wristbands
+                  are used for elderly care, safety, connected health and much
+                  more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Row -->
+        <div
+          class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+        >
+          <div class="col-2fr gradient-border p-6 rounded-lg">
+            <div class="flex items-start space-x-4">
+              <img
+                src="images/smarko2-hand.png"
+                alt="Wrist Band"
+                class="w-12 h-12"
+              />
+              <div>
+                <h2 class="text-[#217DC1] text-xl font-semibold pb-3">
+                  Wrist <br />
+                  band
+                </h2>
+                <p class="paragraph dark:text-white">
+                  A wristband or fitness band offers limited functionalities.
+                  Compared to a smartwatch, it just covers a selected amount of
+                  use cases (e.g. step counting, sleep monitoring, location
+                  tracking, access control, etc.).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3fr gradient-border p-6 rounded-lg">
+            <div class="flex items-start space-x-4">
+              <img
+                src="images/smarko2-watch.png"
+                alt="Sports Watch"
+                class="w-12 h-12"
+              />
+              <div>
+                <h2 class="text-[#217DC1] text-xl font-semibold pb-3">
+                  Sports <br />
+                  watch
+                </h2>
+                <p class="paragraph dark:text-white">
+                  A sports watch is a highly functional, robust and usually
+                  water-resistant device. Leisure or professional athletes
+                  mainly monitor their health conditions, fitness and sleep
+                  activities. Sports watches have fewer features compared to
+                  smartwatches as their main focus is on sports tracking.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 md:px-12 xl:px-20 dark:text-white">
+      <div class="w-full rounded-[16px] my-20 mx-auto bg-[#FFFFFF1A]">
+        <div
+          class="flex items-center justify-between gap-4 md:gap-8 flex-col md:flex-row"
+        >
+          <div class="w-full md:w-[60%] px-4 py-6 xs:p-8">
+            <h1
+              class="font-semibold text-[32px] leading-[48px] pb-4"
+            >
+              Seamless Connectivity
+            </h1>
+            <p class="paragraph">
+              Today’s hyperconnected consumer wants one thing above all else –
+              convenience! In other words: easy, intuitive ways to tune into the
+              entertaining and useful information they love and need – without
+              switching between different devices or screens. The answer is
+              surprisingly simple: wearables. They support a growing number of
+              use cases, including payment, access, health and activity
+              tracking, education, and gaming. Wearable tech delivers a curated
+              flow of information in a digestible, easy-to-understand format,
+              and can trigger customized notifications or send alerts to
+              connected services.
+            </p>
+          </div>
+          <div class="-mt-6 -mb-6 -mx-12 md:mx-0 w-full md:w-[40%]">
+            <img src="images/smarko-watah.png" class="w-full" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container px-6 md:px-12 xl:px-20 dark:text-white mb-10 md:mb-20"
+    >
+      <h2 class="heading">Design key success factors</h2>
+      <p class="paragraph">
+        Today’s wearable design engineers face a number of challenges. In
+        addition to an ultra-compact form factor, smart bands and watches must
+        offer ease of use plus intuitive visualization. Other success factors
+        include high-bandwidth connectivity, measurement accuracy, operational
+        longevity, low power consumption, and stability. Since wearable and
+        health tech devices record the user’s movements in changing
+        environments, components must be designed for operational stability
+        under different conditions, while always ensuring precise, robust
+        measurement of pressure and motion. Also, wearables must embed hardened
+        security so users don’t have to worry about personal or confidential
+        data falling into the wrong hands.
+      </p>
+    </div>
+
+    <div
+      class="container px-6 md:px-12 xl:px-20 dark:text-white mb-10 md:mb-20"
+    >
+      <div
+        class="flex items-start justify-between gap-4 md:gap-8 flex-col md:flex-row"
+      >
+        <!-- left -->
+        <div class="w-full md:w-1/2 space-y-4">
+          <h2 class="heading">One-stop shop</h2>
+          <p class="paragraph">
+            Small in size, our XENSIV™ sensors enable sports, health, and
+            activity monitoring to the highest precision and quality. Our
+            XENSIV™ 60 GHz radar sensor is ideal for health monitoring use cases
+            such as blood pressure or heart rate sensing.
+          </p>
+          <p class="paragraph">
+            With sales in excess of three billion globally, AIROC™ connectivity
+            products are proven, reliable solutions for wearables. SmarKo Wi-Fi
+            combos have redefined industry standards with their ultra-low power
+            Wi-Fi and enhanced interference mitigation. PSoC™ Bluetooth® LE
+            families combine compute, connectivity and analog into a low power,
+            highly integrated device.
+          </p>
+        </div>
+        <!-- right -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="images/smarko-hand-watch.png"
+            class="w-full max-h-[400px] h-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container px-6 md:px-12 xl:px-20 dark:text-white mb-10 md:mb-20"
+    >
+      <div class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] rounded-[20px] p-8 flex items-center justify-between gap-4 md:gap-8 flex-col md:flex-row">
+        <!-- left -->
+        <div class="w-full md:w-1/3 lg:w-1/4">
+          <h2 class="heading pb-4">Highlights</h2>
+          <img src="images/two-watch.png" alt="" />
+        </div>
+        <!-- right -->
+         <div class="w-full md:w-2/3 lg:w-3/4">
+            <div class="">
+                <div class="flex items-center gap-4">
+                    <h2 class="font-semibold text-[30px] leading-[45px] text-[#217DC1]">01</h2>
+                    <p class="paragraph">SmarKo SEMPER™ Nano NOR flash: optimized for wearables and hearables</p>
+                </div>
+                <div class="">
+                    <p class="paragraph py-4">SEMPER™ Nano provides enough memory for advanced features, while delivering industry-best power consumption in a tiny footprint. Solutions Hub software, kits, boards, and resources simplify design and accelerate time-to-market.</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex items-center gap-4 pt-6">
+                    <h2 class="font-semibold text-[30px] leading-[45px] text-[#217DC1]">02</h2>
+                    <p class="paragraph">Application brochure: Smartwatch, sports watch, wristband, and medical wrist-worn devices</p>
+                </div>
+                <div class="">
+                    <p class="paragraph py-4">SmarKo is a power semiconductor leader for IoT devices. With our broad product solutions and portfolio, you can solve design challenges such as data security, sensor accuracy, connectivity, device protection, all while enabling best-in-class power consumption and IC form factor.</p>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- footer --> 
+    <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
+        <div
+          class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+        >
+          <div class="w-[300px] mx-auto">
+            <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
+              Contact information
+            </h4>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+              >
+                <img src="images/email.png" alt="" />
+              </div>
+              <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+                info@Mcs-Datalabs.com
+              </p>
+            </div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+              >
+                <img src="images/wattsapp.png" alt="" />
+              </div>
+              <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+                +49 160 913 70 729
+              </p>
+            </div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="h-[40px] w-[40px] bg-[#FFFFFF33] flex-shrink-0 rounded-full flex items-center justify-center"
+              >
+                <img src="images/location.png" alt="" />
+              </div>
+              <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+                WilmersdorferStr. 50 10627 Berlin, Germany
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
+          >
+            <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+            <div class="flex flex-col gap-2">
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >DECIDE</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >EMYNOS</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >ONCORELIEF</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >REFLOW</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >RELEVIUM</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >REPEAT</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >SmarKo Health®</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >STAMINA</a
+              >
+            </div>
+          </div>
+          <div class="w-[300px] mx-auto">
+            <h4 class="pb-6 font-bold text-[32px] leading-[48px]">
+              News and Events
+            </h4>
+            <div class="flex flex-col gap-2">
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >News</a
+              >
+              <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >Release</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    
+    <script src="script.js"></script>
+  </body>
+</html>

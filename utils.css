@@ -9,3 +9,17 @@
     font-size: 32px;
     line-height: 48px;
 }
+
+.col-3fr {
+    flex: 3 1 0%;
+}
+
+.col-2fr {
+    flex: 2 1 0%;
+}
+
+.gradient-border {
+    border: 3px solid;
+    border-image-source: linear-gradient(9.96deg, #7A7D96 64.04%, rgba(122, 125, 150, 0.305) 90.62%, rgba(122, 125, 150, 0) 100.6%);
+    border-image-slice: 1;
+}
