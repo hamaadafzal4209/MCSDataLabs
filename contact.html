@@ -30,7 +30,7 @@
       >
         <ul class="xl:flex mr-auto items-center gap-4">
           <li>
-            <a class="leading-[32px] text-[#94c246]" href="/index.html">Home</a>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
           </li>
           <li>
             <a
@@ -53,7 +53,7 @@
             <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
           </li>
           <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="#contact">Contact</a>
+            <a class="leading-[32px] text-[#94c246]" href="#contact">Contact</a>
           </li>
         </ul>
         <!-- right nav section -->
@@ -117,19 +117,109 @@
             let's grow your <br />
             <span class="contact-hero-line">social</span> presence !!
           </h1>
-          <!-- about banner -->
           <div
-            class="contact-card -mt-[130px] mb-[130px] translate-y-[130px] px-10 py-6 rouned-[16px] mx-auto"
+            class="py-6 mx-auto"
           >
             <div
-              class="flex items-center justify-between"
+              class="contactCardContainer max-w-4xl mx-auto text-center translate-y-28 -mt-28"
             >
-              <div class="contact-card"></div>
+            <!-- card 1 -->
+             <div class="bg-[#f3f3f3] dark:bg-[#1C1E35] dark:text-white rounded-[20px] px-6 py-12 flex items-center justify-center flex-col gap-4">
+                <img src="images/address.png" alt="">
+                <p class="font-semibold text-lg leading-[26px]">Wilmersdorfer Straße.50 ,10627 Berlin Germany</p>
+             </div>
+            <!-- card 2 -->
+             <div class="bg-[#f3f3f3] dark:bg-[#1C1E35] dark:text-white rounded-[20px] px-6 py-12 flex items-center justify-center flex-col gap-4">
+                <img src="images/phone-call.png" alt="">
+                <p class="font-semibold text-lg leading-[26px]">+49 160 913 70729</p>
+             </div>
+            <!-- card 3 -->
+             <div class="bg-[#f3f3f3] dark:bg-[#1C1E35] dark:text-white rounded-[20px] px-6 py-12 flex items-center justify-center flex-col gap-4">
+                <img src="images/contact-email.png" alt="">
+                <p class="font-semibold text-lg leading-[26px]">info@mcs-datalabs.com</p>
+             </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+     <!-- contact -->
+     <div class="container px-6 md:px-12 xl:px-20 mt-28 mb-10">
+        <h1 class="text-[#217dc1] font-bold text-[32px] leading-[48px]">
+          Contact <span class="text-[#1f1f1f] dark:text-white">Us !!</span>
+        </h1>
+        <div
+          class="bg-white dark:bg-[#FFFFFF1A] rounded-[20px] px-3 sm:px-6 py-6 sm:py-10 border dark:border-[#7A7D96] mt-3"
+        >
+          <div
+            class="flex items-center justify-between gap-8 flex-col md:flex-row"
+          >
+            <!-- left -->
+            <div class="w-full md:w-1/2">
+              <form>
+                <label
+                  class="font-normal text-lg px-6 leading-[27px] text-[#1f1f1f] dark:text-white"
+                  for="name"
+                  >Your Name (required)</label
+                >
+                <input
+                  class="block bg-[#f7f7f7] dark:bg-[#FFFFFF1A] dark:text-white w-full px-6 py-3 my-4 outline-none border-none [#525252] rounded-[30px]"
+                  type="text"
+                  placeholder="Shams Samir Hassan"
+                  required
+                  name="name"
+                  id="name"
+                />
+                <label
+                  class="font-normal text-lg px-6 leading-[27px] text-[#1f1f1f] dark:text-white"
+                  for="email"
+                  >Your Email (required)</label
+                >
+                <input
+                  class="block bg-[#f7f7f7] dark:bg-[#FFFFFF1A] dark:text-white w-full px-6 py-3 my-4 outline-none border-none [#525252] rounded-[30px]"
+                  type="email"
+                  placeholder="sameerrsham*******@gmail.com"
+                  required
+                  name="email"
+                  id="email"
+                />
+                <label
+                  class="font-normal text-lg px-6 leading-[27px] text-[#1f1f1f] dark:text-white"
+                  for="message"
+                  >Your Mesage</label
+                >
+                <textarea
+                  class="block bg-[#f7f7f7] dark:bg-[#FFFFFF1A] dark:text-white w-full h-48 px-6 py-3 my-4 mb-6 outline-none border-none text-[#525252] rounded-[30px]"
+                  type="email"
+                  placeholder="type your message here..."
+                  required
+                  name="message"
+                  id="message"
+                ></textarea>
+                <button
+                  class="w-full mt-4 pl-5 pr-2 py-2 rounded-full text-white bg-[#217dc1] flex items-center justify-between text-center font-medium text-lg leading-[27px]"
+                  type="submit"
+                >
+                  <div></div>
+                  Send Message
+                  <div
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#FFFFFF3D]"
+                  >
+                    <img src="images/right-arrow-white.png" alt="Right Arrow" />
+                  </div>
+                </button>
+              </form>
+            </div>
+            <!-- right -->
+            <div
+              class="w-full md:w-1/2 bg-[#217dc1] h-[500px] rounded-[22px] pt-36 flex items-center justify-center"
+            >
+              <img src="images/contactsection.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- footer -->
     <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
