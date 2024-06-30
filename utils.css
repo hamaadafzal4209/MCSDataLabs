@@ -69,8 +69,19 @@
     grid-gap: 24px;
 }
 
+.newsVarient2Container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 24px;
+}
+
 @media (max-width:1200px) {
     .newsContainer{
+       grid-template-columns: 1fr;
+       display: flex;
+       flex-direction: column;
+    }
+    .newsVarient2Container{
        grid-template-columns: 1fr;
        display: flex;
        flex-direction: column;
