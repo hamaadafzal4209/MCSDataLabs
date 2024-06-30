@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <!-- boxicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#fafafc] dark:bg-[#02051E]">
+    <!-- navbar -->
+    <nav
+      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    >
+      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+        <img src="images/logo.png" class="w-full h-full" alt="" />
+      </div>
+      <div
+        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
+      >
+        <ul class="xl:flex mr-auto items-center gap-4">
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a
+              class="leading-[32px] text-[#A9A9A9] whitespace-nowrap"
+              href="/smarko.html"
+              >SmarKo Health®</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#94c246]" href="/project-EMYNOS.html"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- right nav section -->
+        <div class="xl:flex items-center gap-4">
+          <!-- search input -->
+          <form
+            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+          >
+            <i class="ri-search-line text-[#A9A9A9]"></i>
+            <input
+              type="search"
+              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+              placeholder="Search"
+            />
+          </form>
+          <!-- social icons -->
+          <div class="flex items-center gap-3">
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+            >
+              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu icon -->
+      <div class="menu-icon cursor-pointer block xl:hidden">
+        <img src="images/menu-icon.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="hero">
+      <div class="container px-6 md:px-12 xl:px-20">
+        <div
+          class="py-10 md:py-20 flex items-center justify-between gap-6 flex-col md:flex-row"
+        >
+          <!-- left -->
+          <div class="w-full md:w-1/2 text-white flex flex-col justify-center">
+            <h2 class="font-bold text-[48px] leading-[72px]">Stamina</h2>
+            <h2 class="font-bold text-[44px] leading-[64px]">
+              STAMINA represents a great opportunity to further refine MCS’
+              SmarKo®
+            </h2>
+          </div>
+          <!-- right -->
+          <div class="w-full md:w-1/2 relative h-[400px] sm:h-full">
+            <img src="images/blur-bg.png" class="w-full h-full" alt="" />
+            <img
+              class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"
+              src="images/youtube-icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 md:px-12 xl:px-20 my-10 md:my-20 dark:text-white">
+      <div class="max-w-4xl mx-auto">
+        <p class="paragraph text-justify">
+            MCS is represented in the project along with 37 other organizations: first responders, government agencies, research organizations, universities, and other entities from 17 European or associated countries. The consortium members will develop a technical ecosystem with the STAMINA engine being a core part. MCS will support in architectural system design, decision support toolset integration, point-of-care diagnostics and monitoring tools configuration, as well as the development of an interface for data exchange. technology. The wearable device will play a role in the project when it comes to observations of vital signs in simulated cross-border interactions. When paired with other functions, software applications and emergency notifications, this technology can be utilized to develop customer-defined devices for numerous health and emergency scenarios.
+            The project is funded by the European Commission with a budget of EUR 9.5 million (grant agreement ID: 883441).
+        </p>
+      </div>
+    </div>
+
+    <div class="px-6 md:px-12 xl:px-20 my-10 md:my-28">
+      <div class="container">
+        <div
+          class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] dark:text-white flex items-center justify-between flex-col md:flex-row rounded-[20px] overflow-hidden"
+        >
+          <!-- left -->
+          <div
+            class="w-full flex flex-col justify-between items-center md:max-w-sm md:w-full min-h-[400px] h-full bg-[#217DC1]"
+          >
+            <img src="images/Stamina-logo.png" class="w-[133px] mt-12" alt="" />
+            <img src="images/wavw.png" class="w-full" alt="" />
+          </div>
+          <!-- right -->
+          <div class="flex-1">
+            <p class="paragraph text-justify p-6 md:p-12">
+              EMYNOS is a European Commission-funded project, managed by a
+              European research and innovation consortium in which MCS Data Labs
+              participates. The acronym stands for ‘nExt generation eMergencY
+              commuNicatiOnS’. EMYNOS will enable users to make emergency calls
+              across heterogeneous devices such as PCs, TV sets, mobile devices,
+              AAC and haptic devices, using various mature technologies (Session
+              Initiation Protocol, IP Multimedia Subsystem (IMS), WebRTC). The
+              project will also demonstrate how the eCall concept can benefit
+              from the IP technologies by allowing audio-video calls towards the
+              emergency call centers and complementing location information,
+              with photos and videos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- European Commission -->
+
+        <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10 md:my-20">
+            <div class="container bg-[#f3f3f3] dark:bg-[#FFFFFF1A] rounded-[20px]">
+              <div class="flex items-center justify-between flex-col sm:flex-row gap-6">
+                <!-- left -->
+                <div class="p-8">
+                  <p class="font-semibold text-[28px] leading-[42px]">EMYNOS project partners :</p>
+                  <p class="font-medium text-[24ox] leading-9">
+                    The EMYNOS project is fully funded by the European Commision/ H2020 Programme Grant Agreement No. 553762
+                  </p>
+                </div>
+                <!-- right -->
+                <div class="bg-[#071952] w-full sm:max-w-72 p-8 rounded-[20px] space-y-4 -my-10">
+                  <img src="images/commision.png" class="w-full" alt="">
+                  <p class="paragraph">European <br class="block"> Commission</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- footer -->
+    <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
+      <div
+        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+      >
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
+            Contact information
+          </h4>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/email.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              info@Mcs-Datalabs.com
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/wattsapp.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              +49 160 913 70 729
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] flex-shrink-0 rounded-full flex items-center justify-center"
+            >
+              <img src="images/location.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              WilmersdorferStr. 50 10627 Berlin, Germany
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
+        >
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >DECIDE</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >EMYNOS</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >ONCORELIEF</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REFLOW</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >RELEVIUM</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REPEAT</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >SmarKo Health®</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >STAMINA</a
+            >
+          </div>
+        </div>
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">
+            News and Events
+          </h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >News</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >Release</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
