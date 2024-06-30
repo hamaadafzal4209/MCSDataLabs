@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <!-- boxicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#fafafc] dark:bg-[#02051E]">
+    <!-- navbar -->
+    <nav
+      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    >
+      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+        <img src="images/logo.png" class="w-full h-full" alt="" />
+      </div>
+      <div
+        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
+      >
+        <ul class="xl:flex mr-auto items-center gap-4">
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a
+              class="leading-[32px] text-[#A9A9A9] whitespace-nowrap"
+              href="/smarko.html"
+              >SmarKo Health®</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/project-EMYNOS.html"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#94c246]" href="/news.html">News</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- right nav section -->
+        <div class="xl:flex items-center gap-4">
+          <!-- search input -->
+          <form
+            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+          >
+            <i class="ri-search-line text-[#A9A9A9]"></i>
+            <input
+              type="search"
+              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+              placeholder="Search"
+            />
+          </form>
+          <!-- social icons -->
+          <div class="flex items-center gap-3">
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+            >
+              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu icon -->
+      <div class="menu-icon cursor-pointer block xl:hidden">
+        <img src="images/menu-icon.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="hero px-6 md:px-12 xl:px-20">
+      <div class="container pt-20 pb-32">
+        <!-- search box -->
+        <form
+          class="max-w-4xl mx-auto flex items-center flex-col sm:flex-row gap-4"
+        >
+          <div
+            class="rounded-[30px] px-4 py-4 h-[56px] w-full flex-1 bg-[#3A465F] flex items-center gap-2"
+          >
+            <i class="bx bx-search text-white text-2xl"></i>
+            <input
+              type="search"
+              required
+              placeholder="Search"
+              class="placeholder:text-white font-normal text-lg leading-6 text-white bg-transparent border-none outline-none pr-2 flex-1 w-full"
+            />
+          </div>
+          <button
+            type="submit"
+            style="background-image: url('images/new-search-btn-bg.png')"
+            class="pl-5 pr-1.5 cursor-pointer h-[56px] w-[156px] flex items-center justify-between gap-2 text-white rounded-[20px]"
+          >
+            Search
+            <div
+              class="w-[44px] h-[44px] rounded-full bg-[#FFFFFF3D] flex items-center justify-center"
+            >
+              <img src="images/right-arrow.png" alt="" />
+            </div>
+          </button>
+        </form>
+
+        <div class="text-center pt-10">
+          <h1 class="heading z-[1] text-white">
+            Explore the <span class="latest-news-vector">latest news</span
+            ><br />
+            about MCS Datalabs !!
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- mews container -->
+
+    <div class="px-6 md:px-12 xl:px-20 -mt-20">
+      <div class="container newsContainer dark:text-white">
+        <!-- left -->
+         <div class="w-full space-y-4">
+            <img src="images/news-thumbnail.png" class="w-full object-cover" alt="">
+            <p class="font-bold text-[32px] leading-[48px] ">MCS on Behalf of ZuConnect: Celebrating Our Success with SmarKo®Technology in Istanbul.</p>
+            <div class="flex items-start md:items-center justify-start md:justify-between flex-wrap flex-col md:flex-row gap-4 ">
+              <div class="flex items-center gap-2">
+                <img src="images/timer.png" alt="">
+                <p class="font-medium text-[20px] leading-[30px]">5. December 2023</p>
+              </div>
+              <div class="">
+                <p class="font-medium text-[20px] leading-[30px]">Share this:</p>
+              </div>
+              <div class="flex items-start sm:items-center gap-4">
+                <div class="w-[52px] h-[52px] rounded-full bg-[#1A1C32] dark:bg-[#FFFFFF33] flex-shrink-0 cursor-pointer flex items-center justify-center">
+                  <img src="images/facebook.png" alt="">
+                </div>
+                <div class="w-[52px] h-[52px] rounded-full bg-[#1A1C32] dark:bg-[#FFFFFF33] flex-shrink-0 cursor-pointer flex items-center justify-center">
+                  <img src="images/twitter.png" alt="">
+                </div>
+                <div class="w-[52px] h-[52px] rounded-full bg-[#1A1C32] dark:bg-[#FFFFFF33] flex-shrink-0 cursor-pointer flex items-center justify-center">
+                  <i class='bx bxl-linkedin-square text-[#E5E7EC] text-[26px]' ></i>
+                </div>
+                <div class="w-[52px] h-[52px] rounded-full bg-[#1A1C32] dark:bg-[#FFFFFF33] flex-shrink-0 cursor-pointer flex items-center justify-center">
+                  <img src="images/mail.png" alt="">
+                </div>
+              </div>
+            </div>
+            <p class="paragraph">We are excited to announce MCS’s remarkable achievement at the Zuzalu Hackathon in Istanbul. Our team secured 1st place in the DeSci category and 2nd place in the Zero-Knowledge track.
+              Zuzalu is an unprecedented pop-up city experiment that brings together leading innovators in crypto, AI, governance, decentralized science, and culture for a two-week popup village in the heart of Istanbul. 
+              This event marks a significant milestone for MCS. Our co-founder, Celin Mousa , along with the support of the Zuzalu community,Xian Zheng,and Daniel Knobelsdorf .
+              This success is more than just a triumph for MCS; it stands as a testament to the transformative potential of SmarKo® technology in the industry. This recognition has not only honored our efforts but also opened exciting new opportunities for our company and stakeholders. We are eager to use this momentum to foster further innovation and make a substantial impact in our field.</p>
+         </div>
+        <!-- right -->
+         <div class="w-full space-y-4">
+          <!-- toggle button -->
+          <div class="h-[56px] mt-3 mb-3 mx-auto rounded-full w-[300px] flex items-center text-white gap-[10px] bg-[#3A465F] text-lg p-[6px] pl-[20px]">
+            Press Release <button class="bg-[#217DC1] text-white font-medium text-lg leading-6 py-2 px-4 rounded-full">
+              Latest News
+            </button>
+          </div>
+          <!-- news card 1 -->
+           <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+            <div class="w-full md:w-[160px] max-h-[300px] h-full overflow-hidden rounded-[20px] md:h-[160px]">
+              <img src="images/news1.png" class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-[20px] leading-[30px]">
+                MCS on Behalf of ZuConnect: Celebrating Our Success with SmarKo®Technology in Istanbul.
+              </p>
+              <small class="text-[#48A0D5]">2020 0406 V2 STAMINA Press Release</small>
+            </div>
+           </div>
+          <!-- news card 2 -->
+           <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+            <div class="w-full md:w-[160px] max-h-[300px] h-full overflow-hidden rounded-[20px] md:h-[160px]">
+              <img src="images/news2.png" class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-[20px] leading-[30px]">
+                MCS on Behalf of ZuConnect: Celebrating Our Success with SmarKo®Technology in Istanbul.
+              </p>
+              <small class="text-[#48A0D5]">2020 0406 V2 STAMINA Press Release</small>
+            </div>
+           </div>
+          <!-- news card 3 -->
+           <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+            <div class="w-full md:w-[160px] max-h-[300px] h-full overflow-hidden rounded-[20px] md:h-[160px]">
+              <img src="images/news3.png" class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-[20px] leading-[30px]">
+                MCS on Behalf of ZuConnect: Celebrating Our Success with SmarKo®Technology in Istanbul.
+              </p>
+              <small class="text-[#48A0D5]">2020 0406 V2 STAMINA Press Release</small>
+            </div>
+           </div>
+          <!-- news card 4 -->
+           <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+            <div class="w-full md:w-[160px] max-h-[300px] h-full overflow-hidden rounded-[20px] md:h-[160px]">
+              <img src="images/news4.png" class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-[20px] leading-[30px]">
+                MCS on Behalf of ZuConnect: Celebrating Our Success with SmarKo®Technology in Istanbul.
+              </p>
+              <small class="text-[#48A0D5]">2020 0406 V2 STAMINA Press Release</small>
+            </div>
+           </div>
+          <!-- news card 5 -->
+           <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+            <div class="w-full md:w-[160px] max-h-[300px] h-full overflow-hidden rounded-[20px] md:h-[160px]">
+              <img src="images/news5.png" class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-[20px] leading-[30px]">
+                MCS on Behalf of ZuConnect: Celebrating Our Success with SmarKo®Technology in Istanbul.
+              </p>
+              <small class="text-[#48A0D5]">2020 0406 V2 STAMINA Press Release</small>
+            </div>
+           </div>
+           <!-- show more button -->
+            <div class="mt-4">
+              <p class="text-center flex items-center justify-center cursor-pointer">Show More <i class='bx bx-chevron-down text-[22px]'></i></p>
+            </div>
+         </div>
+      </div>
+    </div>
+
+        <!-- links -->
+
+        <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10">
+          <div class="container">
+            <h2 class="font-semibold text-[28px] leading-[42px] pb-8">see More :</h2>
+            <div class="gradient-border">
+              <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A]">
+                <img src="images/document.png" alt="">
+                <a class="break-words" href="https://cdn0.scrvt.com/fokus/2867a8733b3b4746/ba0d25b76355/170130-brochure-emynos.pdf">EMYNOS brochure (download)</a>
+              </div>
+              <img src="images/links-horizontal-line.png" class="w-full" alt="">
+              <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A] ">
+                <img src="images/document.png" alt="">
+                <a class="break-words" href="https://mcs-datalabs.com/ng112-emergency-communications-plugtest-2nd-edition/">EMYNOS on NG112 Emergency Communications Plugtest, 2nd Edition</a>
+              </div>
+              <img src="images/links-horizontal-line.png" class="w-full" alt="">
+              <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A] ">
+                <img src="images/document.png" alt="">
+                <a class="break-words" href="https://www.etsi.org/events/1110-ng112-2">ETSI (European Telecommunications Standards Institute) on NG112 Plugtest, 2nd Edition</a>
+              </div>
+              <img src="images/links-horizontal-line.png" class="w-full" alt="">
+              <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A] ">
+                <img src="images/document.png" alt="">
+                <a class="break-words" href="https://www.etsi.org/events/1110-ng112-2">ETSI (European Telecommunications Standards Institute) on NG112 Plugtest, 2nd Edition</a>
+              </div>
+              <img src="images/links-horizontal-line.png" class="w-full" alt="">
+              <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A] ">
+                <img src="images/document.png" alt="">
+                <a class="break-words" href="https://www.etsi.org/events/1110-ng112-2">ETSI (European Telecommunications Standards Institute) on NG112 Plugtest, 2nd Edition</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- footer -->
+    <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
+      <div
+        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+      >
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
+            Contact information
+          </h4>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/email.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              info@Mcs-Datalabs.com
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/wattsapp.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              +49 160 913 70 729
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] flex-shrink-0 rounded-full flex items-center justify-center"
+            >
+              <img src="images/location.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              WilmersdorferStr. 50 10627 Berlin, Germany
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
+        >
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >DECIDE</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >EMYNOS</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >ONCORELIEF</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REFLOW</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >RELEVIUM</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REPEAT</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >SmarKo Health®</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >STAMINA</a
+            >
+          </div>
+        </div>
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">
+            News and Events
+          </h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >News</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >Release</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

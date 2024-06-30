@@ -63,6 +63,21 @@
     height: 100%;
 }
 
+.newsContainer{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 24px;
+}
+
+@media (max-width:1200px) {
+    .newsContainer{
+       grid-template-columns: 1fr;
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+
 @media (max-width:850px) {
     .objectiveGrid{
         display: flex;
