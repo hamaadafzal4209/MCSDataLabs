@@ -23,3 +23,49 @@
     border-image-source: linear-gradient(9.96deg, #7A7D96 64.04%, rgba(122, 125, 150, 0.305) 90.62%, rgba(122, 125, 150, 0) 100.6%);
     border-image-slice: 1;
 }
+
+.feature-container {
+    border: 1.5px solid;
+    border-image-source: linear-gradient(7.52deg, #4C4C4C 3%, rgba(76, 76, 76, 0) 95.45%);
+    border-image-slice: 1;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.features-card {
+    border: 3px solid;
+    border-image-source: linear-gradient(9.96deg, #7A7D96 64.04%, rgba(122, 125, 150, 0.305) 90.62%, rgba(122, 125, 150, 0) 100.6%);
+    background: #02051E;
+    border-image-slice: 1;
+    border-radius: 20px;
+}
+
+.objectiveGrid{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 24px;
+}
+
+.brandsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.aim-banner{
+    background: url('images/aim-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:850px) {
+    .objectiveGrid{
+        display: flex;
+        flex-direction: column;
+    }
+}

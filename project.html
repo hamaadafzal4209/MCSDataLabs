@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <!-- boxicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#fafafc] dark:bg-[#02051E]">
+    <!-- navbar -->
+    <nav
+      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    >
+      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+        <img src="images/logo.png" class="w-full h-full" alt="" />
+      </div>
+      <div
+        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
+      >
+        <ul class="xl:flex mr-auto items-center gap-4">
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a
+              class="leading-[32px] text-[#A9A9A9] whitespace-nowrap"
+              href="/smarko.html"
+              >SmarKo Health®</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#94c246]" href="/project.html"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
+          </li>
+          <li>
+            <a class="leading-[32px] text-[#A9A9A9]" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- right nav section -->
+        <div class="xl:flex items-center gap-4">
+          <!-- search input -->
+          <form
+            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+          >
+            <i class="ri-search-line text-[#A9A9A9]"></i>
+            <input
+              type="search"
+              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+              placeholder="Search"
+            />
+          </form>
+          <!-- social icons -->
+          <div class="flex items-center gap-3">
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+            >
+              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+            </div>
+            <div
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+            </div>
+            <div
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+            >
+              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu icon -->
+      <div class="menu-icon cursor-pointer block xl:hidden">
+        <img src="images/menu-icon.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="hero">
+      <div class="container px-6 md:px-12 xl:px-20">
+        <div
+          class="py-10 md:py-20 flex items-center justify-between gap-6 flex-col md:flex-row"
+        >
+          <!-- left -->
+          <div class="w-full md:w-1/2 text-white flex flex-col justify-center">
+            <h2 class="font-bold text-[48px] leading-[72px]">EMYNOS</h2>
+            <h2 class="font-bold text-[44px] leading-[64px]">
+              EMYNOS is a European Commission-funded project
+            </h2>
+          </div>
+          <!-- right -->
+          <div class="w-full md:w-1/2 relative h-[400px] sm:h-full">
+            <img src="images/blur-bg.png" class="w-full h-full" alt="" />
+            <img
+              class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"
+              src="images/youtube-icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 md:px-12 xl:px-20 my-10 md:my-20">
+      <div class="container">
+        <div
+          class="bg-[#f3f3f3] dark:bg-[#FFFFFF1A] dark:text-white flex items-center justify-between flex-col md:flex-row rounded-[20px] overflow-hidden"
+        >
+          <!-- left -->
+          <div
+            class="w-full flex flex-col justify-between items-center md:max-w-sm md:w-full min-h-[400px] h-full bg-[#217DC1]"
+          >
+            <img src="images/emynos-logo.png" class="w-[133px] mt-12" alt="" />
+            <img src="images/wavw.png" class="w-full" alt="" />
+          </div>
+          <!-- right -->
+          <div class="flex-1">
+            <p class="paragraph text-justify p-6 md:p-12">
+              EMYNOS is a European Commission-funded project, managed by a
+              European research and innovation consortium in which MCS Data Labs
+              participates. The acronym stands for ‘nExt generation eMergencY
+              commuNicatiOnS’. EMYNOS will enable users to make emergency calls
+              across heterogeneous devices such as PCs, TV sets, mobile devices,
+              AAC and haptic devices, using various mature technologies (Session
+              Initiation Protocol, IP Multimedia Subsystem (IMS), WebRTC). The
+              project will also demonstrate how the eCall concept can benefit
+              from the IP technologies by allowing audio-video calls towards the
+              emergency call centers and complementing location information,
+              with photos and videos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- features or rules -->
+
+    <div class="px-6 md:px-12 xl:px-20 text-white">
+      <div class="container feature-container">
+        <!-- card 1 -->
+        <div class="features-card p-6">
+          <div class="flex items-center justify-between">
+            <h2 class="paragraph">EMYNOS</h2>
+            <img src="images/flag.png" alt="" />
+          </div>
+          <div class="">
+            <p class="paragraph">
+              develops next generation emergeny calling infrastructure, bringing
+              emergency calling to the all-IP world.
+            </p>
+            <div class="mt-4 space-y-2 mb-4">
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Rich-media emergency calls (audio, video, text messaging)
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Emergency calls from browser with no need for plugins
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Automatic transfer of caller location
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Focus on needs of disabled people
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Complying with VoiP and emergency calling standards
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="features-card p-6">
+          <div class="flex items-center justify-between">
+            <h2 class="paragraph">Key Features</h2>
+            <img src="images/call.png" alt="" />
+          </div>
+          <div class="">
+            <div class="mt-4 space-y-2 mb-4">
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Fully IP-based infrastructure
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Standard VoIP protocols (SIP, SDP, RTP)
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Browser-based emergency calling using WebRTC, WebSockets and
+                  geolocation API
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Compliant with EENA NG112
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Location Data encoding as PIDFLO (by value/ by reference)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="features-card p-6">
+          <div class="flex items-center justify-between">
+            <h2 class="paragraph">Key Benefits</h2>
+            <img src="images/dotted-circle.png" alt="" />
+          </div>
+          <div class="">
+            <div class="mt-4 space-y-2 mb-4">
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Rich media emergency calls (audio, video, real-time text)
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Automatic transfer of caller locations
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Focus on needs of disabled people
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/bullet.png" alt="" />
+                <p class="paragraph text-[#E4E6EB]">
+                  Transfer of additional medical data
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- objectives -->
+
+    <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10 md:my-20">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="paragraph text-center">Objectives :</h2>
+        <p class="paragraph text-center py-6">
+          The actual emergency systems are based on old-fashioned
+          telecommunication technologies that cannot cope with the new IP-based
+          services that the European citizens use every day. Some of these
+          limitations are summarized below:
+        </p>
+        <div class="objectiveGrid">
+          <!-- left -->
+          <div class="">
+            <img
+              src="images/objective-bg.png"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+          <!-- right -->
+          <div class="space-y-4">
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                01
+              </div>
+              <p class="paragraph">
+                here is no standard underlying technology for the separate
+                emergency systems
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                02
+              </div>
+              <p class="paragraph">
+                There is no interconnection among the PSAPs (Public Safety
+                Answering Points): this, unfortunately, limits the transfer of
+                calls in case of congestion and network outage
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                03
+              </div>
+              <p class="paragraph">
+                Media limitation: currently only voice calls and sometimes SMS
+                are accepted
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                04
+              </div>
+              <p class="paragraph">
+                here is no standard underlying technology for the separate
+                emergency systems
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                05
+              </div>
+              <p class="paragraph">
+                No unified platform: currently emergency warning systems are
+                completely separate from the 112 emergency centers
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                06
+              </div>
+              <p class="paragraph">
+                There are no advanced features, such as caller location
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                07
+              </div>
+              <p class="paragraph">
+                Emergency calls are unidirectional: they are established from
+                the end-users towards the PSAPs
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                08
+              </div>
+              <p class="paragraph">
+                There is no non-telecommunication platform as a backup in case
+                the telecommunication infrastructure is not operational
+              </p>
+            </div>
+            <div class="flex items-start md:items-center gap-4">
+              <div
+                class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0"
+              >
+                09
+              </div>
+              <p class="paragraph">
+                eCall (the emergency solution for vehicles in case of crash)
+                technology is based on GSM, which limits the amount of emergency
+                data that can be sent
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- aim -->
+
+    <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10 md:my-20">
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="flex items-center justify-center flex-col max-w-3xl mx-auto"
+        >
+          <h2 class="heading flex items-center gap-4">
+            The aim <img src="images/aim.png" alt="" />
+          </h2>
+          <h2 class="heading text-center">of the EMYNOS project</h2>
+          <p class="paragraph text-center pt-4">
+            to design, specify and develop a Next Generation emergency framework
+            that resolves the above mentioned limitations.
+          </p>
+        </div>
+        <div class="aim-banner rounded-[20px] p-8 mt-8">
+          <div
+            class="flex items-center justify-between flex-col md:flex-row gap-6"
+          >
+            <!-- left -->
+            <div class="w-full md:w-1/2">
+              <p class="paragraph pb-6">
+                EMYNOS Innovations by offering a Solution including voice,
+                video, realtime text, haptic devices, symbols, speech synthesis
+              </p>
+              <span class="inline">Source:</span>
+              <a
+                class="inline break-words"
+                href="https://www.emynos.eu/en/emynos/why_emynos"
+                >https://www.emynos.eu/en/emynos/why_emynos</a
+              >
+            </div>
+            <!-- right -->
+            <div class="flex items-center justify-center w-full md:w-1/2">
+              <img src="images/aim-banner-vector.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- aim points -->
+
+    <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10 md:my-20">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
+          <!-- left -->
+          <div class="space-y-4 h-full flex flex-col">
+            <div class="gradient-border p-4 rounded-md flex items-start md:items-center gap-4 h-full">
+              <div class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0">01</div>
+              <p class="paragraph text-justify">Caller Location retrieval compliant to IETF and ETSI</p>
+            </div>
+            <div class="gradient-border p-4 rounded-md flex items-start md:items-center gap-4 h-full">
+              <div class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0">02</div>
+              <p class="paragraph text-justify">eCall extensions including photos and videos</p>
+            </div>
+            <div class="gradient-border p-4 rounded-md flex items-start md:items-center gap-4 h-full">
+              <div class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0">03</div>
+              <p class="paragraph text-justify">Exploit social media to support disaster management operations</p>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="h-full flex flex-col">
+            <div class="gradient-border p-4 rounded-md flex items-start gap-4 h-full">
+              <div class="h-[42px] w-[42px] flex items-center justify-center text-white bg-[#217DC1] rounded-full flex-shrink-0">04</div>
+              <p class="paragraph text-justify">
+                Support for persons with various categories of disabilities (Augmentative and Alternative Communication users, motor disabled Assistive Technology users, blind and low vision users, deaf and hard of hearing users) by offering a solution including (voice, video, real time text, haptic devices, symbols, speech synthesis).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- links -->
+
+    <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10 md:my-20">
+      <div class="container">
+        <h2 class="font-semibold text-[28px] leading-[42px] pb-8">Links :</h2>
+        <div class="gradient-border">
+          <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A]">
+            <img src="images/document.png" alt="">
+            <a class="break-words" href="https://cdn0.scrvt.com/fokus/2867a8733b3b4746/ba0d25b76355/170130-brochure-emynos.pdf">EMYNOS brochure (download)</a>
+          </div>
+          <img src="images/links-horizontal-line.png" class="w-full" alt="">
+          <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A] ">
+            <img src="images/document.png" alt="">
+            <a class="break-words" href="https://mcs-datalabs.com/ng112-emergency-communications-plugtest-2nd-edition/">EMYNOS on NG112 Emergency Communications Plugtest, 2nd Edition</a>
+          </div>
+          <img src="images/links-horizontal-line.png" class="w-full" alt="">
+          <div class="flex items-start md:items-center gap-4 sm:gap-6 py-4 sm:py-6 px-6 sm:px-8 hover:bg-[#f3f3f3] dark:hover:bg-[#FFFFFF1A] ">
+            <img src="images/document.png" alt="">
+            <a class="break-words" href="https://www.etsi.org/events/1110-ng112-2">ETSI (European Telecommunications Standards Institute) on NG112 Plugtest, 2nd Edition</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- European Commission -->
+
+    <div class="px-6 md:px-12 xl:px-20 dark:text-white my-10 md:my-20">
+      <div class="container bg-[#f3f3f3] dark:bg-[#FFFFFF1A] rounded-[20px]">
+        <div class="flex items-center justify-between flex-col sm:flex-row gap-6">
+          <!-- left -->
+          <div class="p-8">
+            <p class="font-semibold text-[28px] leading-[42px]">EMYNOS project partners :</p>
+            <p class="font-medium text-[24ox] leading-9">
+              The EMYNOS project is fully funded by the European Commision/ H2020 Programme Grant Agreement No. 553762
+            </p>
+          </div>
+          <!-- right -->
+          <div class="bg-[#071952] w-full sm:max-w-72 p-8 rounded-[20px] space-y-4 -my-10">
+            <img src="images/commision.png" class="w-full" alt="">
+            <p class="paragraph">European <br class="block"> Commission</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
+      <div
+        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+      >
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
+            Contact information
+          </h4>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/email.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              info@Mcs-Datalabs.com
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] rounded-full flex items-center justify-center"
+            >
+              <img src="images/wattsapp.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              +49 160 913 70 729
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <div
+              class="h-[40px] w-[40px] bg-[#FFFFFF33] flex-shrink-0 rounded-full flex items-center justify-center"
+            >
+              <img src="images/location.png" alt="" />
+            </div>
+            <p class="font-normal text-lg leading-[27px] text-[#EAEAEA]">
+              WilmersdorferStr. 50 10627 Berlin, Germany
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
+        >
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >DECIDE</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >EMYNOS</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >ONCORELIEF</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REFLOW</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >RELEVIUM</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >REPEAT</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >SmarKo Health®</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >STAMINA</a
+            >
+          </div>
+        </div>
+        <div class="w-[300px] mx-auto">
+          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">
+            News and Events
+          </h4>
+          <div class="flex flex-col gap-2">
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >News</a
+            >
+            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+              >Release</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
