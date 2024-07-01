@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
     <!-- boxicon cdn -->
     <link
       rel="stylesheet"
@@ -33,7 +34,9 @@
             <a class="leading-[32px] text-[#94c246]" href="/index.html">Home</a>
           </li>
           <li>
-            <a class="leading-[32px] text-[#A9A9A9] whitespace-nowrap" href="/smarko.html"
+            <a
+              class="leading-[32px] text-[#A9A9A9] whitespace-nowrap"
+              href="/smarko.html"
               >SmarKo Health®</a
             >
           </li>
@@ -43,13 +46,17 @@
             >
           </li>
           <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="/project-EMYNOS.html">Project</a>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/project-EMYNOS.html"
+              >Project</a
+            >
           </li>
           <li>
             <a class="leading-[32px] text-[#A9A9A9]" href="/news.html">News</a>
           </li>
           <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="/contact.html">Contact</a>
+            <a class="leading-[32px] text-[#A9A9A9]" href="/contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
         <!-- right nav section -->
@@ -153,7 +160,9 @@
           >
             Research and development
           </h1>
-          <p class="text-[16px] dark:text-white leading-[24px] font-[400]">
+          <p
+            class="text-[16px] dark:text-white leading-[24px] font-[400] text-justify"
+          >
             MCS has access to several research organisations, universities, and
             young talent, allowing the firm to contribute to international
             innovation projects.
@@ -169,7 +178,9 @@
           >
             Analytical capabilities
           </h1>
-          <p class="text-[16px] dark:text-white leading-[24px] font-[400]">
+          <p
+            class="text-[16px] dark:text-white leading-[24px] font-[400] text-justify"
+          >
             MCS puts high emphasis on analytical methodologies, with the aim to
             arrive at solutions that convince through simplicity.
           </p>
@@ -184,7 +195,9 @@
           >
             Result-driven inspiration
           </h1>
-          <p class="text-[16px] dark:text-white leading-[24px] font-[400]">
+          <p
+            class="text-[16px] dark:text-white leading-[24px] font-[400] text-justify"
+          >
             MCS stays away from rigid structures and thinking processes.
             Instead, MCS nurtures a culture in which ideas and innovation can
             flourish.
@@ -466,8 +479,17 @@
           </p>
         </div>
         <!-- right section -->
-        <div class="w-full md:w-1/2">
-          <img src="images/smarko-cycle.png" alt="" />
+        <div class="w-full md:w-1/2 flex items-center justify-center relative">
+          <img
+            src="images/smarko-cycle.png"
+            class="sm:px-12 md:px-0 w-full"
+            alt=""
+          />
+          <img
+            src="images/smarko-logo.png"
+            class="absolute top-1/2 left-1/2 dark:hidden -translate-x-[44%] -translate-y-[30%] w-[23%]"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -515,7 +537,7 @@
 
       <!-- project 1 -->
       <div class="flex items-start gap-2 mt-8 max-w-[850px]">
-        <div class="number relative mr-4 flex-shrink-0">
+        <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
           <img
             src="images/project-circle.png"
             class="absolute -bottom-4 left-6"
@@ -525,18 +547,22 @@
         </div>
         <div class="">
           <div
-            class="flex items-center justify-between w-full xs:w-[260px] mb-2"
+            class="flex items-center justify-between w-full max-w-[260px] mb-2"
           >
             <h3 class="font-bold text-[26px] leading-[39px]">RELEVIUM</h3>
-            <div
-              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-            >
-              <img src="images/right-arrow.png" alt="" />
+            <div class="gradient-icon-border">
+              <div
+                class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+              >
+                <img src="images/right-arrow.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="relative">
-            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
-            <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
+            <div
+              class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+            ></div>
+            <div class="h-0.5 w-full max-w-[260px] bg-[#A9A9A9]"></div>
           </div>
           <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
             Pancreatic cancer has the lowest survival rate among other cancers
@@ -551,7 +577,7 @@
 
       <!-- project 2 -->
       <div class="flex items-start gap-2 mt-8 max-w-[850px] lg:ml-40">
-        <div class="number relative mr-4 flex-shrink-0">
+        <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
           <img
             src="images/project-circle.png"
             class="absolute -bottom-4 left-6"
@@ -561,18 +587,22 @@
         </div>
         <div class="">
           <div
-            class="flex items-center justify-between w-full xs:w-[260px] mb-2"
+            class="flex items-center justify-between w-full max-w-[260px] mb-2"
           >
             <h3 class="font-bold text-[26px] leading-[39px]">ONCORELIEF</h3>
-            <div
-              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-            >
-              <img src="images/right-arrow.png" alt="" />
+            <div class="gradient-icon-border">
+              <div
+                class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+              >
+                <img src="images/right-arrow.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="relative">
-            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
-            <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
+            <div
+              class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+            ></div>
+            <div class="h-0.5 w-full max-w-[260px] bg-[#A9A9A9]"></div>
           </div>
           <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
             Thanks to advances in medical treatment chances to survive cancer
@@ -586,7 +616,7 @@
 
       <!-- project 3 -->
       <div class="flex items-start gap-2 mt-8 max-w-[850px]">
-        <div class="number relative mr-4 flex-shrink-0">
+        <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
           <img
             src="images/project-circle.png"
             class="absolute -bottom-4 left-6"
@@ -599,14 +629,18 @@
             class="flex items-center justify-between w-full xs:w-[260px] mb-2"
           >
             <h3 class="font-bold text-[26px] leading-[39px]">EMYNOS</h3>
-            <div
-              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-            >
-              <img src="images/right-arrow.png" alt="" />
+            <div class="gradient-icon-border">
+              <div
+                class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+              >
+                <img src="images/right-arrow.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="relative">
-            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+            <div
+              class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+            ></div>
             <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
           </div>
           <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
@@ -620,7 +654,7 @@
 
       <!-- project 4 -->
       <div class="flex items-start gap-2 mt-8 max-w-[850px] lg:ml-40">
-        <div class="number relative mr-4 flex-shrink-0">
+        <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
           <img
             src="images/project-circle.png"
             class="absolute -bottom-4 left-6"
@@ -633,14 +667,18 @@
             class="flex items-center justify-between w-full xs:w-[260px] mb-2"
           >
             <h3 class="font-bold text-[26px] leading-[39px]">DECIDE</h3>
-            <div
-              class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-            >
-              <img src="images/right-arrow.png" alt="" />
+            <div class="gradient-icon-border">
+              <div
+                class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+              >
+                <img src="images/right-arrow.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="relative">
-            <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
+            <div
+              class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+            ></div>
             <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
           </div>
           <p class="font-normal text-lg leading-[27px] pt-2 [#525252]">
@@ -658,7 +696,7 @@
     </div>
 
     <!-- project 5 -->
-    <div class="pt-12  my-16 bg-[#217dc1]">
+    <div class="pt-12 my-16 bg-[#217dc1]">
       <div
         class="container flex items-start justify-between gap-8 flex-col md:flex-row"
       >
@@ -667,10 +705,14 @@
           class="w-full md:w-1/2 flex items-center justify-center flex-col gap-4"
         >
           <img class="" src="images/smarko-white-logo.png" alt="" />
-          <img src="images/mobile.png" class="w-full h-full object-cover" alt="" />
+          <img
+            src="images/mobile.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
         </div>
         <!-- right -->
-        <div class="w-full md:w-1/2 px-6 md:px-12 xl:px-20">
+        <div class="w-full md:w-1/2 px-6 md:px-12 xl:px-20 mb-12">
           <div class="">
             <img src="images/05.png" alt="" />
             <h1 class="font-bold text-[26px] leading-[39px] text-white -mt-9">
@@ -683,12 +725,17 @@
               tested prototype was developed by MCS Data Labs GmbH, Berlin
               (Germany).
             </p>
-            <a href="#" class="learnMoreBtn my-6 inline-block">
+            <button
+              class="send-message-btn max-w-sm w-full mt-4 pl-5 pr-2 py-2 rounded-full text-white bg-[#ffffff44] flex items-center justify-between text-center font-medium text-base sm:text-lg leading-[27px]"
+              type="button"
+            >
               Click here to learn more ...
-              <div>
+              <div
+                class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#FFFFFF3D]"
+              >
                 <img src="images/right-arrow-white.png" alt="Right Arrow" />
               </div>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -714,20 +761,25 @@
         typesetting industry. Lorem Ipsum has been the industry's
       </h2>
       <div class="mt-6">
-        <img id="use-case-image" src="images/usecases.png" class="z-20" alt="" />
-    </div>
+        <img
+          id="use-case-image"
+          src="images/usecases.png"
+          class="z-20"
+          alt=""
+        />
+      </div>
     </div>
 
     <!-- project 6 -->
     <div class="container px-6 md:px-12 xl:px-20 my-10 dark:text-white">
       <div
-        class="max-w-[950px] w-full mx-auto flex items-center justify-center flex-col md:flex-row gap-8"
+        class="w-full mx-auto flex items-center justify-center flex-col md:flex-row gap-8"
       >
         <!-- left section -->
         <div class="mt-8 w-full md:w-1/2">
           <div class="mb-4">
             <div class="flex items-start gap-2">
-              <div class="number relative mr-4 flex-shrink-0">
+              <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
                 <img
                   src="images/project-circle.png"
                   class="absolute -bottom-4 left-6"
@@ -737,18 +789,22 @@
               </div>
               <div class="">
                 <div
-                  class="flex items-center justify-between w-full xs:w-[260px] mb-2"
+                  class="flex items-center justify-between max-w-[260px] w-full mb-2"
                 >
                   <h3 class="font-bold text-[26px] leading-[39px]">REPEAT</h3>
-                  <div
-                    class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-                  >
-                    <img src="images/right-arrow.png" alt="" />
+                  <div class="gradient-icon-border">
+                    <div
+                      class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+                    >
+                      <img src="images/right-arrow.png" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="relative">
-                  <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
-                  <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
+                  <div
+                    class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+                  ></div>
+                  <div class="h-0.5 w-full max-w-[260px] bg-[#A9A9A9]"></div>
                 </div>
               </div>
             </div>
@@ -774,7 +830,7 @@
     <!-- project 7 -->
     <div class="container px-6 md:px-12 xl:px-20 my-6 xs:my-10 dark:text-white">
       <div
-        class="max-w-[950px] w-full mx-auto flex items-center justify-center flex-col-reverse md:flex-row gap-8"
+        class="w-full mx-auto flex items-center justify-center flex-col-reverse md:flex-row gap-8"
       >
         <!-- left section -->
         <div class="w-full h-[240px] md:w-1/2 flex items-center justify-center">
@@ -784,7 +840,7 @@
         <div class="mt-8 w-full md:w-1/2">
           <div class="mb-4">
             <div class="flex items-start gap-2">
-              <div class="number relative mr-4 flex-shrink-0">
+              <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
                 <img
                   src="images/project-circle.png"
                   class="absolute -bottom-4 left-6"
@@ -794,18 +850,22 @@
               </div>
               <div class="">
                 <div
-                  class="flex items-center justify-between w-full xs:w-[260px] mb-2"
+                  class="flex items-center justify-between w-full max-w-[260px] mb-2"
                 >
                   <h3 class="font-bold text-[26px] leading-[39px]">REFLOW</h3>
-                  <div
-                    class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-                  >
-                    <img src="images/right-arrow.png" alt="" />
+                  <div class="gradient-icon-border">
+                    <div
+                      class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+                    >
+                      <img src="images/right-arrow.png" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="relative">
-                  <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
-                  <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
+                  <div
+                    class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+                  ></div>
+                  <div class="h-0.5 w-full max-w-[260px] bg-[#A9A9A9]"></div>
                 </div>
               </div>
             </div>
@@ -824,13 +884,13 @@
     <!-- project 8 -->
     <div class="container px-6 md:px-12 xl:px-20 my-6 xs:my-10 dark:text-white">
       <div
-        class="max-w-[950px] w-full mx-auto flex items-center justify-center flex-col md:flex-row gap-8"
+        class="w-full mx-auto flex items-center justify-center flex-col md:flex-row gap-8"
       >
         <!-- left section -->
         <div class="mt-8 w-full md:w-1/2">
           <div class="mb-4">
             <div class="flex items-start gap-2">
-              <div class="number relative mr-4 flex-shrink-0">
+              <div class="number relative mr-2 sm:mr-4 flex-shrink-0">
                 <img
                   src="images/project-circle.png"
                   class="absolute -bottom-4 left-6"
@@ -840,18 +900,22 @@
               </div>
               <div class="">
                 <div
-                  class="flex items-center justify-between w-full xs:w-[260px] mb-2"
+                  class="flex items-center justify-between w-full max-w-[260px] mb-2"
                 >
                   <h3 class="font-bold text-[26px] leading-[39px]">STAMINA</h3>
-                  <div
-                    class="w-[46px] h-[46px] rounded-full flex items-center justify-center bg-[#A9A9A924]"
-                  >
-                    <img src="images/right-arrow.png" alt="" />
+                  <div class="gradient-icon-border">
+                    <div
+                      class="gradient-inner-circle bg-[#EFEFF0] dark:bg-[#323448] w-[43px] h-[43px] rounded-full flex items-center justify-center"
+                    >
+                      <img src="images/right-arrow.png" alt="" />
+                    </div>
                   </div>
                 </div>
                 <div class="relative">
-                  <div class="h-1 w-[120px] rounded-full bg-[#217dc1]"></div>
-                  <div class="h-0.5 w-full xs:w-[260px] bg-[#A9A9A9]"></div>
+                  <div
+                    class="h-1 w-[120px] rounded-full translate-y-[3px] bg-[#217dc1]"
+                  ></div>
+                  <div class="h-0.5 w-full max-w-[260px] bg-[#A9A9A9]"></div>
                 </div>
               </div>
             </div>
@@ -884,7 +948,7 @@
       >
         <img id="head-line-left-3" src="images/head-line.png" alt="" />
         <h2
-          class="font-bold text-[32px] leading-[48px] dark:text-white capitalize"
+          class="font-bold text-[32px] text-center leading-[48px] dark:text-white capitalize"
         >
           <span class="role-underline">our role</span> in projects
         </h2>
@@ -1052,7 +1116,7 @@
                 id="message"
               ></textarea>
               <button
-                class="w-full mt-4 pl-5 pr-2 py-2 rounded-full text-white bg-[#217dc1] flex items-center justify-between text-center font-medium text-lg leading-[27px]"
+                class="send-message-btn w-full mt-4 pl-5 pr-2 py-2 rounded-full text-white bg-[#217dc1] flex items-center justify-between text-center font-medium text-lg leading-[27px]"
                 type="submit"
               >
                 <div></div>
@@ -1075,10 +1139,10 @@
       </div>
     </div>
 
-    <!-- footer --> 
+    <!-- footer -->
     <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
       <div
-        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+        class="container flex items-start justify-center flex-wrap flex-col md:flex-row text-white text-left gap-6 md:gap-12"
       >
         <div class="w-[300px] mx-auto">
           <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
@@ -1115,35 +1179,54 @@
             </p>
           </div>
         </div>
-        <div
-          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
-        >
-          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
-          <div class="flex flex-col gap-2">
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >DECIDE</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >EMYNOS</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >ONCORELIEF</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >REFLOW</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >RELEVIUM</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >REPEAT</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >SmarKo Health®</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >STAMINA</a
-            >
+        <!-- middle footer -->
+        <div class="w-[220px] mx-auto">
+          <div
+            class="footer-middle-div relative border-[#E6E9EA] flex items-center justify-center flex-col"
+          >
+            <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+            <div class="flex flex-col gap-2">
+              <a
+                href="project-DECIDE.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >DECIDE</a
+              >
+              <a
+                href="project-EMYNOS.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >EMYNOS</a
+              >
+              <a
+                href="project-ONCORELIEF.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >ONCORELIEF</a
+              >
+              <a
+                href="project-REFLOW.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >REFLOW</a
+              >
+              <a
+                href="project-RELEVIUM.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >RELEVIUM</a
+              >
+              <a
+                href="project-Repeat.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >REPEAT</a
+              >
+              <a
+                href="smarko.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >SmarKo Health®</a
+              >
+              <a
+                href="project-Stamina.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >STAMINA</a
+              >
+            </div>
           </div>
         </div>
         <div class="w-[300px] mx-auto">
@@ -1151,7 +1234,9 @@
             News and Events
           </h4>
           <div class="flex flex-col gap-2">
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+            <a
+              href="/news.html"
+              class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
               >News</a
             >
             <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
