@@ -34,6 +34,14 @@ body {
   gap: 24px;
 }
 
+@media (max-width: 450px) {
+  .service-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+}
+
 .news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -160,7 +168,8 @@ body {
 
 .underline-vector {
   position: relative;
-  display: inline-block; /* Ensure the span has dimensions */
+  display: inline-block;
+  /* Ensure the span has dimensions */
 }
 
 .underline-vector::after {
@@ -174,6 +183,7 @@ body {
   height: 17px;
   z-index: -1;
 }
+
 .latest-underline-vector {
   position: relative;
   display: inline-block;
@@ -296,7 +306,7 @@ footer {
 .hero {
   background: linear-gradient(#0000218b, #0000218b),
     url("images/hero-bg.png") no-repeat;
-    background-position: center;
+  background-position: center;
   width: 100%;
   background-size: cover;
   height: 100%;
@@ -309,12 +319,12 @@ footer {
 }
 
 .about-banner {
-  background: url("images/about-banner.png");
+  background: url("images/aim-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1000px;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 40px ;
 }
 
 .about-hero-line {
@@ -334,6 +344,7 @@ footer {
   height: 20px;
   z-index: -1;
 }
+
 .contact-hero-line {
   position: relative;
   display: inline-block;
@@ -358,9 +369,99 @@ footer {
   gap: 16px;
 }
 
+.cardShadow {
+  transition: all 0.3s ease-in-out;
+}
+
 .cardShadow:hover {
   box-shadow: 6px 44px 52px 0px #00000040;
   border-top: 12px solid #217dc1;
+}
+
+.timeline-card {
+  position: relative;
+}
+
+.dark .timeline-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #1b1e34;
+  top: -18px;
+  left: 20px;
+  border-radius: 5px;
+}
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #f3f3f3;
+  top: -18px;
+  left: 20px;
+  border-radius: 5px;
+}
+
+.timeline-card::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 22px;
+  background: url("images/timeline-circle.png");
+  width: 16px;
+  height: 16px;
+}
+
+.mobile-timeline-card{
+  position: relative;
+}
+
+.dark .mobile-timeline-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #1b1e34;
+  top: 20px;
+  left: -20px;
+  border-radius: 5px;
+}
+.mobile-timeline-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #f3f3f3;
+  top: 20px;
+  left: -20px;
+  border-radius: 5px;
+}
+
+.mobile-timeline-card::after{
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -44px;
+  background: url("images/timeline-circle.png");
+  width: 16px;
+  height: 16px;
+}
+
+.change-line-color {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.dark .change-line-color{
+  filter: none;
 }
 
 @media (max-width: 1250px) {
@@ -386,6 +487,7 @@ footer {
   nav form input {
     width: 100% !important;
   }
+
   .smarkoSolution {
     grid-template-columns: 1fr;
   }
@@ -424,8 +526,9 @@ footer {
   nav form input {
     width: 100% !important;
   }
+
   .number {
     scale: 0.6;
-    margin-right: 2px !important  ;
+    margin-right: 2px !important;
   }
 }

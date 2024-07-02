@@ -20,103 +20,115 @@
   <body class="bg-[#fafafc] dark:bg-[#02051E]">
     <!-- navbar -->
     <nav
-      class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+    class="container px-6 md:px-12 xl:px-20 flex items-center justify-between gap-4 h-[100px]"
+  >
+    <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
+      <img src="images/logo.png" class="w-full h-full" alt="" />
+    </div>
+    <div
+      class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
     >
-      <div class="logo w-[73px] h-[40px] md:w-[110px] md:h-[60px]">
-        <img src="images/logo.png" class="w-full h-full" alt="" />
-      </div>
-      <div
-        class="navBar xl:dark:bg-transparent dark:bg-[#0A0A2A] xl:flex xl:items-center xl:justify-between gap-4 flex-1"
-      >
-        <ul class="xl:flex mr-auto items-center gap-4">
-          <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
-          </li>
-          <li>
-            <a
-              class="leading-[32px] text-[#A9A9A9] whitespace-nowrap"
-              href="/smarko.html"
-              >SmarKo Health®</a
-            >
-          </li>
-          <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
-              >About</a
-            >
-          </li>
-          <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="/project-EMYNOS.html"
-              >Project</a
-            >
-          </li>
-          <li>
-            <a class="leading-[32px] text-[#A9A9A9]" href="#news">News</a>
-          </li>
-          <li>
-            <a class="leading-[32px] text-[#94c246]" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <!-- right nav section -->
-        <div class="xl:flex items-center gap-4">
-          <!-- search input -->
-          <form
-            class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+      <ul class="xl:flex mr-auto items-center gap-4">
+        <li>
+          <a class="leading-[32px] text-[#A9A9A9]" href="/index.html">Home</a>
+        </li>
+        <li>
+          <a
+            class="leading-[32px] text-[#A9A9A9] whitespace-nowrap"
+            href="/smarko.html"
+            >SmarKo Health®</a
           >
-            <i class="ri-search-line text-[#A9A9A9]"></i>
-            <input
-              type="search"
-              class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
-              placeholder="Search"
-            />
-          </form>
-          <!-- social icons -->
-          <div class="flex items-center gap-3">
-            <div
-              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
-            >
-              <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
-            </div>
-            <div
-              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
-            >
-              <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
-            </div>
-            <div
-              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
-            >
-              <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
-            </div>
-            <div
-              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
-            >
-              <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
-            </div>
-            <div
-              id="darkModeToggle"
-              onclick="toggleDarkMode()"
-              class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
-            >
-              <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
-            </div>
+        </li>
+        <li>
+          <a class="leading-[32px] text-[#A9A9A9]" href="/about.html"
+            >About</a
+          >
+        </li>
+        <li>
+          <a class="leading-[32px] text-[#A9A9A9]" href="/project-EMYNOS.html"
+            >Project</a
+          >
+        </li>
+        <li>
+          <a class="leading-[32px] text-[#A9A9A9]" href="/news.html">News</a>
+        </li>
+        <li>
+          <a class="leading-[32px] text-[#94c246]" href="/contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <!-- right nav section -->
+      <div class="xl:flex items-center gap-4">
+        <!-- search input -->
+        <form
+          class="rounded-full w-[185px] h-[52px] flex items-center gap-1 bg-[#A9A9A924] px-4"
+        >
+          <i class="ri-search-line text-[#A9A9A9]"></i>
+          <input
+            type="search"
+            class="border-none outline-none bg-transparent text-[#010101] dark:text-[#A9A9A9] w-full"
+            placeholder="Search"
+          />
+        </form>
+        <!-- social icons -->
+        <div class="flex items-center gap-3">
+          <div
+            class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+          >
+            <i class="ri-facebook-fill text-[#A9A9A9] text-lg"></i>
+          </div>
+          <div
+            class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+          >
+            <i class="ri-twitter-x-line text-[#A9A9A9] text-lg"></i>
+          </div>
+          <div
+            class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center border-2 border-[#FE0000]"
+          >
+            <i class="ri-youtube-fill text-[#FE0000] text-lg"></i>
+          </div>
+          <div
+            class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+          >
+            <i class="bx bxs-envelope text-[#A9A9A9] text-lg"></i>
+          </div>
+          <div
+            id="darkModeToggle"
+            onclick="toggleDarkMode()"
+            class="h-[52px] w-[52px] bg-[#A9A9A924] rounded-full flex items-center justify-center"
+          >
+            <i id="themeIcon" class="bx bxs-moon text-[#A9A9A9] text-lg"></i>
           </div>
         </div>
       </div>
-      <!-- menu icon -->
-      <div class="menu-icon cursor-pointer block xl:hidden">
-        <img src="images/menu-icon.png" alt="" />
-      </div>
-    </nav>
+    </div>
+    <!-- menu icon -->
+    <div class="menu-icon cursor-pointer block xl:hidden">
+      <img src="images/menu-icon.png" alt="" />
+    </div>
+  </nav>
 
     <!-- hero section -->
     <div class="hero">
       <div class="container px-6 md:px-12 xl:px-20">
-        <div class="">
-          <h1
-            class="font-bold text-[40px] leading-[60px] text-white py-10 text-center text-balance"
-          >
-            let's grow your <br />
-            <span class="contact-hero-line">social</span> presence !!
+        <div class="relative">
+          <h1 class="font-bold text-[40px] leading-[60px] text-white py-10 text-center mx-auto">
+            <span class="flex items-center justify-center gap-2">
+              let's grow your <img src="images/spaceship.png" alt="" class="hidden sm:inline-block align-middle">
+            </span>
+            <span class="contact-hero-line ">social</span> presence !!
           </h1>
+          <img
+          class="absolute -left-48 z-0 top-28"
+          src="images/light-wave.png"
+          alt=""
+        />
+        <img
+          class="absolute -right-32 top-20 z-0 -rotate-90"
+          src="images/light-wave.png"
+          alt=""
+        />
           <div
             class="py-6 mx-auto"
           >
@@ -224,7 +236,7 @@
     <!-- footer -->
     <footer class="py-32 xs:pt-60 2xl:pt-80 px-6 md:px-12 xl:px-20">
       <div
-        class="container flex items-start justify-center flex-wrap text-white text-left gap-6"
+        class="container flex items-start justify-center flex-wrap flex-col md:flex-row text-white text-left gap-6 md:gap-12"
       >
         <div class="w-[300px] mx-auto">
           <h4 class="pb-14 font-bold text-[32px] leading-[48px]">
@@ -261,35 +273,54 @@
             </p>
           </div>
         </div>
-        <div
-          class="w-[300px] border-l-2 border-r-2 border-[#E6E9EA] flex items-center justify-center flex-col"
-        >
-          <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
-          <div class="flex flex-col gap-2">
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >DECIDE</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >EMYNOS</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >ONCORELIEF</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >REFLOW</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >RELEVIUM</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >REPEAT</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >SmarKo Health®</a
-            >
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
-              >STAMINA</a
-            >
+        <!-- middle footer -->
+        <div class="w-[220px] mx-auto">
+          <div
+            class="footer-middle-div relative border-[#E6E9EA] flex items-center justify-center flex-col"
+          >
+            <h4 class="pb-6 font-bold text-[32px] leading-[48px]">Projects</h4>
+            <div class="flex flex-col gap-2">
+              <a
+                href="project-DECIDE.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >DECIDE</a
+              >
+              <a
+                href="project-EMYNOS.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >EMYNOS</a
+              >
+              <a
+                href="project-ONCORELIEF.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >ONCORELIEF</a
+              >
+              <a
+                href="project-REFLOW.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >REFLOW</a
+              >
+              <a
+                href="project-RELEVIUM.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >RELEVIUM</a
+              >
+              <a
+                href="project-Repeat.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >REPEAT</a
+              >
+              <a
+                href="smarko.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >SmarKo Health®</a
+              >
+              <a
+                href="project-Stamina.html"
+                class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+                >STAMINA</a
+              >
+            </div>
           </div>
         </div>
         <div class="w-[300px] mx-auto">
@@ -297,7 +328,9 @@
             News and Events
           </h4>
           <div class="flex flex-col gap-2">
-            <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
+            <a
+              href="/news.html"
+              class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
               >News</a
             >
             <a href="" class="font-normal text-lg leading-[27px] text-[#EAEAEA]"
