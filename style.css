@@ -169,7 +169,6 @@ body {
 .underline-vector {
   position: relative;
   display: inline-block;
-  /* Ensure the span has dimensions */
 }
 
 .underline-vector::after {
@@ -324,7 +323,7 @@ footer {
   background-repeat: no-repeat;
   max-width: 1000px;
   width: 100%;
-  border-radius: 40px ;
+  border-radius: 40px;
 }
 
 .about-hero-line {
@@ -394,6 +393,7 @@ footer {
   left: 20px;
   border-radius: 5px;
 }
+
 .timeline-card::before {
   content: "";
   position: absolute;
@@ -417,7 +417,51 @@ footer {
   height: 16px;
 }
 
-.mobile-timeline-card{
+.timeline-importance-card {
+  position: relative;
+}
+
+.timeline-importance-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #f3f3f3;
+  top: -18px;
+  left: 20px;
+  border-radius: 5px;
+}
+
+.timeline-importance-card::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 22px;
+  background: url("images/timeline-white-circle.png");
+  width: 16px;
+  height: 16px;
+}
+
+.mobile-timeline-importance-card {
+  position: relative;
+}
+
+.mobile-timeline-importance-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #fff;
+  top: 20px;
+  left: -18px;
+  border-radius: 5px;
+}
+
+.mobile-timeline-card {
   position: relative;
 }
 
@@ -433,6 +477,7 @@ footer {
   left: -20px;
   border-radius: 5px;
 }
+
 .mobile-timeline-card::before {
   content: "";
   position: absolute;
@@ -446,21 +491,16 @@ footer {
   border-radius: 5px;
 }
 
-.mobile-timeline-card::after{
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: -44px;
-  background: url("images/timeline-circle.png");
-  width: 16px;
-  height: 16px;
+.last-card::after {
+  display: none;
 }
 
 .change-line-color {
-  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%)
+    contrast(100%);
 }
 
-.dark .change-line-color{
+.dark .change-line-color {
   filter: none;
 }
 
